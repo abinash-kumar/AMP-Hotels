@@ -1,0 +1,268 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+	<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+	<!-- <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script> -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<style amp-custom>
+		/* any custom style goes here */
+		html{font-size: 62.5%;}
+		body {		
+		color: #4a4a4a;
+		line-height:1.3;
+		font-family: 'Questrial', sans-serif,Helvetica Neue,Arial;
+		font-size:1.8rem;
+		background: white;
+		font-smooth: always;
+		text-size-adjust: 100%;
+		-webkit-font-smoothing: antialiased;
+		}
+		a {text-decoration:none;}
+		.navbar{
+			padding:1.2rem;
+			display:flex;
+			justify-content: space-between;
+			align-items: center;
+			font-size: 3.5rem;
+			color:#0db3c7;
+		}
+		
+		.subNav{
+			display:flex;
+			justify-content: space-between;			
+		}
+		
+		.sub{
+			background-image: linear-gradient(90deg,#0db3c7 0,#77e0ec);
+			width:100%;
+			padding:1.2rem;
+			display:flex;
+			justify-content:center;
+		}
+		
+		.sub a {
+			text-decoration:none;
+			color:#fff;
+		}
+		
+		.textOnImg{
+			background-image: linear-gradient(90deg,#0db3c7 0,#77e0ec);
+			height:105px;
+			width:100%;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			font-size: 4rem;
+			color: #fff;
+			-webkit-clip-path: polygon(100% 100%,100% 0,-400% 0);
+			clip-path: polygon(100% 100%,100% 0,-400% 0);
+		}
+		
+		h1{padding:10px;}
+		.para{padding:0 20px;color: #6b6a6a;letter-spacing: 1.5px;text-align:justify;}
+		.OurClnt {margin: 15px; margin-bottom: 0px;}
+		.OurClnt > h3{padding:10px;}
+		.acord{padding:10px;}
+		.acord h3{padding:10px;}
+		.OurClnt h3:before{
+		font-family: FontAwesome;
+		content: '\f0da';
+		margin-right:5px;}	
+		.paraExplnd {
+		padding: 20px;
+		color: #6b6a6a;
+		text-align:justify;
+		letter-spacing: 1.5px;
+		background: #f1f1f1;}
+		.acordHed{
+		background-image: linear-gradient(90deg,#0db3c7 0,#77e0ec);
+		text-align:center;
+		color:#fff;}
+		.award_img_list {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		padding: 0;
+		list-style: none;
+		}
+		footer {
+		padding-top:10px;
+		background-image: linear-gradient(90deg,#0db3c7 0,#77e0ec);
+		color:#fff;
+		text-align: center;
+		}
+		footer a{
+			color:#fff;		
+			
+		}
+		.award_img_list i{font-size: 3rem;}
+		footer > p{width:100%;display:flex;justify-content: space-around;}
+		.para_heding{color:#fff;text-align: center;}
+		.footer_btm_text{font-size: 12px;font-style: italic;}
+	</style>
+  </head>
+  <body>
+    <nav class="navbar">
+		<a href="#"><amp-img	src="img/logo.png"  width="170" height="50" ></amp-img></a>
+		<div class="ffrc float_right font30px text_upper mrgn_top nav_btn  clear "> 
+			<span class="theme_color nav_btn clear"><i class="fa fa-bars"></i></span>
+		</div>
+	</nav>
+	<div class="subNav">
+		<div class="sub">
+			<a href="tel:+91-880-046-1053"><i class="fa fa-phone  cal_msg_icn flot_lft"></i>
+			Click to call</a>
+		</div>
+		<div class="sub">
+			<a href="<?php SITE_URL_PATH; ?>/inquire-now.html"><i class="fa fa-envelope  cal_msg_icn flot_rt"></i>
+			Inquire Now</a>		
+		</div>
+	</div>
+	<amp-carousel 
+	  width="400"
+	  height="300"
+	  layout="responsive"
+	  type="slides"
+	  autoplay
+	  delay="5000">						
+		<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-1.jpg"
+			width="400"
+			height="350"
+			layout="responsive"
+			alt="a sample image">
+		</amp-img>
+		
+		<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-2.jpg"
+			width="400"
+			height="350"
+			layout="responsive"
+			alt="a sample image">
+		</amp-img>
+		
+		<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg"
+			width="400"
+			height="350"
+			layout="responsive"
+			alt="a sample image">
+		</amp-img>
+		
+		<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-1.jpg.jpg"
+			width="400"
+			height="350"
+			layout="responsive"
+			alt="a sample image">
+		</amp-img>
+		
+		<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-2.jpg.jpg"
+			width="400"
+			height="350"
+			layout="responsive"
+			alt="a sample image">
+		</amp-img>
+		
+		<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg.jpg"
+			width="400"
+			height="350"
+			layout="responsive"
+			alt="a sample image">
+		</amp-img>
+	</amp-carousel>
+	
+	<div class="textOnImg">
+		<p>All Properties</p>
+	</div>
+	
+	<h1>Perch - Luxury Service Apartments in Gurgaon & Guest Houses</h1>
+	
+	<div class="para">
+		<p>
+			<strong>Perch Serviced Apartments</strong> - Ideal for expat relocation, family long stay in Gurgaon, Japanese guests &amp; medical visitors. 1/2/3 Bedroom &amp; Studio Service Apartments.<br>
+			<strong>Perch Guest Houses</strong> - Perfect for corporate accommodation in Gurgaon, short visits, tourists visiting Gurgaon or Delhi, students &amp; social travelers. Great for business executives and a cost effective alternative to Hotels in Gurgaon
+		</p>
+	</div>
+	
+	<amp-accordion>
+		<section class="OurClnt">
+			<h3>Online Reviews<span class="pull-right"><i class="fa fa-chevron-down"></i></span></h3>
+			<div  class="paraExplnd">		
+				<p>Perch has over 1500 genuine reviews on Tripadvisor, Booking.com, Google & Airbnb</p>
+			</div>
+		</section>
+	  
+		<section class="OurClnt">
+			<h3>Multiple Locations<span class="pull-right"><i class="fa fa-chevron-down"></i></span></h3>
+			<div  class="paraExplnd">
+				<p>HUDA Metro, Golf Course Road, Near Medanta, Sohna Road, DLF Cyber City, Vagator (Goa)</p>
+			</div>		
+		</section>
+		
+		<section class="OurClnt">
+				<h3>Fully Serviced<span class="pull-right"><i class="fa fa-chevron-down"></i></span></h3>
+			</div>
+			<div  class="paraExplnd">
+				<p>24/7 Front Desk, Daily Housekeeping, Concierge, Gym, In-House Cab Service, Laundry</p>
+			</div>		
+		</section>
+		
+		<section class="OurClnt">
+			<h3>Great Amenities<span class="pull-right"><i class="fa fa-chevron-down"></i></span></h3>
+			<div class="paraExplnd">
+				<p>Greenery, In-Apartment Kitchens, Room Service, Complimentary Breakfast &  Gym</p>
+			</div>		
+		</section>	
+	</amp-accordion>
+	<hr>
+	<amp-accordion>
+		<section class="acord">
+			<h3 class="acordHed">Professional Management & A Customer First Company</h3>
+			<div  class="paraExplnd">		
+				<p>Perch Service Apartments is a professionally run organization and strives for 100% guest satisfaction every time. Each of our accommodation in Gurgaon, Delhi NCR and Goa has won awards; Most Promising Service Apartment Provider (2013,14) and Best Guest House (2015,16) as well as Booking.com &amp; Tripadvisor awards. We love getting feedback and use this to help us improve our services &amp; product. If you are unhappy about some aspect please do reach out to Madhu Singh - info@theperch.in</p>
+
+				<p>We choose&nbsp;properties keeping in mind security, noise levels, access to main roads as well as building amenities. In Gurgaon, Delhi &amp; Goa we are at the the safest and most&nbsp;central locations: HUDA City center, Golf Course Road, Medanta, DLF Phase I,II, III, IV, Cyber City, Sohna Road, Vagator Beach Goa, Safdarjung Delhi. In the coming few months, we will be opening in a few more select cities.&nbsp;</p>
+
+				<p><br>
+				Affordability is our Mantra: Service Apartments are upto 60% cheaper than 4/5 Star Hotels in Delhi/ Gurgaon &amp; Goa. We are superior to budget Hotels in Gurgaon / Delhi NCR in terms of service standards. Online Booking and Free Cancellation makes life very simple!*</p></div>
+		</section>
+	</amp-accordion>
+	
+	<ul class="award_img_list">
+		<li><amp-img src="img/award1.JPG" width="110" height="140"></amp-img></li>
+				
+		<li><amp-img src="img/award2.JPG" width="110" height="140"></amp-img></li>
+
+		<li><amp-img src="img/award2.JPG" width="110" height="140"></amp-img></li>
+	</ul>	
+	<footer>
+		<p class="ancrList"><a href="/franchise.html">Franchise</a>|<a href="/policies.html">Policies</a>|<a href="/book-now.html">Book Now</a>|<a href="/blog/">Blog</a></p>
+		<h3 class="para_heding">Call us: +91-8800461053</h3>
+		
+		<ul class="award_img_list">
+			<a href="https://www.facebook.com/theperch.in" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
+			<a href="/blog/" target="_blank"><li><i class="fa fa-rss"></i></li></a>
+			<a href="https://www.linkedin.com/company/the-perch-service-apartments" target="_blank"><li><i class="fa fa-linkedin color_white  font5v"></i></li></a>
+			<a href="https://plus.google.com/+TheperchIn/posts" target="_blank"><li><i class="fa fa-google-plus"></i></li></a>
+		</ul>
+		<span class="footer_btm_text">Copyright © 2016 The Perch Service Apartments. All rights reserved.</span>	
+	</footer>
+	
+  </body>
+</html>
