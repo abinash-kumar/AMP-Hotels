@@ -46,6 +46,17 @@
 			color:#0db3c7;
 		}
 		
+		.cCard{
+		    box-shadow: 0 4px 16px #e2e2e2;
+			background-color: #eee;
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#00ffffff', EndColorStr='#ffffffff');
+			background-image: -webkit-gradient(linear,left bottom,left top,from(rgba(255,255,255,1)),to(rgba(255,255,255,0)));
+			background-image: -webkit-linear-gradient(bottom, rgba(255,255,255,1), rgba(255,255,255,0));
+			background-image: -moz-linear-gradient(bottom, rgba(255,255,255,1), rgba(255,255,255,0));
+			background-image: -ms-linear-gradient(bottom, rgba(255,255,255,1), rgba(255,255,255,0));
+			background-image: -o-linear-gradient(bottom, rgba(255,255,255,1), rgba(255,255,255,0));
+		}
+		
 		.subNav{
 			display:flex;
 			justify-content: space-between;			
@@ -77,10 +88,10 @@
 			clip-path: polygon(100% 100%,100% 0,-400% 0);
 		}
 		
-		h1{padding:10px;}
+		h1{padding:10px;font-size: 3rem;color: #000;}
 		.para{padding:0 20px;color: #6b6a6a;letter-spacing: 1.5px;text-align:justify;}
 		.OurClnt {margin: 15px; margin-bottom: 0px;}
-		.OurClnt > h3{padding:10px;}
+		.OurClnt > h3{padding:10px;font-weight:normal;}
 		.acord{padding:10px;}
 		.acord h3{padding:10px;}
 		.OurClnt h3:before{
@@ -91,8 +102,7 @@
 		padding: 20px;
 		color: #6b6a6a;
 		text-align:justify;
-		letter-spacing: 1.5px;
-		background: #f1f1f1;}
+		letter-spacing: 1.5px;}
 		.acordHed{
 		background-image: linear-gradient(90deg,#0db3c7 0,#77e0ec);
 		text-align:center;
@@ -110,10 +120,7 @@
 		color:#fff;
 		text-align: center;
 		}
-		footer a{
-			color:#fff;		
-			
-		}
+		footer a{color:#fff;}
 		.award_img_list i{font-size: 3rem;}
 		footer > p{width:100%;display:flex;justify-content: space-around;}
 		.para_heding{color:#fff;text-align: center;}
@@ -203,14 +210,14 @@
 	<amp-accordion>
 		<section class="OurClnt">
 			<h3>Online Reviews<span class="pull-right"><i class="fa fa-chevron-down"></i></span></h3>
-			<div  class="paraExplnd">		
+			<div  class="paraExplnd cCard">		
 				<p>Perch has over 1500 genuine reviews on Tripadvisor, Booking.com, Google & Airbnb</p>
 			</div>
 		</section>
 	  
 		<section class="OurClnt">
 			<h3>Multiple Locations<span class="pull-right"><i class="fa fa-chevron-down"></i></span></h3>
-			<div  class="paraExplnd">
+			<div  class="paraExplnd cCard">
 				<p>HUDA Metro, Golf Course Road, Near Medanta, Sohna Road, DLF Cyber City, Vagator (Goa)</p>
 			</div>		
 		</section>
@@ -218,20 +225,22 @@
 		<section class="OurClnt">
 				<h3>Fully Serviced<span class="pull-right"><i class="fa fa-chevron-down"></i></span></h3>
 			</div>
-			<div  class="paraExplnd">
+			<div  class="paraExplnd cCard">
 				<p>24/7 Front Desk, Daily Housekeeping, Concierge, Gym, In-House Cab Service, Laundry</p>
 			</div>		
 		</section>
 		
 		<section class="OurClnt">
 			<h3>Great Amenities<span class="pull-right"><i class="fa fa-chevron-down"></i></span></h3>
-			<div class="paraExplnd">
+			<div class="paraExplnd cCard">
 				<p>Greenery, In-Apartment Kitchens, Room Service, Complimentary Breakfast &  Gym</p>
 			</div>		
 		</section>	
+		
+		
+		
 	</amp-accordion>
-	<hr>
-	<amp-accordion>
+		<amp-accordion>
 		<section class="acord">
 			<h3 class="acordHed">Professional Management & A Customer First Company</h3>
 			<div  class="paraExplnd">		
