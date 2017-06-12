@@ -127,6 +127,9 @@
 		footer > p{width:100%;display:flex;justify-content: space-around;}
 		.para_heding{color:#fff;text-align: center;}
 		.footer_btm_text{font-size: 12px;font-style: italic;}
+		.topSideLogo{height: 86px;width: 100%;display: flex;justify-content: center;align-items: center;}
+		amp-sidebar{background-image: linear-gradient(90deg,#0db3c7 0,#77e0ec);}
+		.topSideLogo{background:#fff;}
 	</style>
   </head>
   <body>
@@ -283,15 +286,18 @@
 	
 	<amp-sidebar id="sidebar"
 	  layout="nodisplay"
-	  side="right">
-	  <amp-img class="amp-close-image"
-		src="/img/ic_close_black_18dp_2x.png"
-		width="20"
-		height="20"
-		alt="close sidebar"
-		on="tap:sidebar.close"
-		role="button"
-		tabindex="0"></amp-img>
+	  side="left">
+	  
+		<div class="topSideLogo">
+		  <amp-img class="amp-close-image"
+			src="img/logo.png"
+			width="170"
+			height="50"
+			alt="close sidebar"
+			on="tap:sidebar.close"
+			role="button"
+			tabindex="0"></amp-img>
+		</div>
 	  <ul>
 		<li>
 		  <a href="/">Home</a>
