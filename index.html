@@ -18,6 +18,7 @@
 	<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
 	<script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
 	<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+	<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
 	<!-- <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script> -->
     <script type="application/ld+json">
       {
@@ -133,17 +134,25 @@
 		footer > p{width:100%;display:flex;justify-content: space-around;}
 		.para_heding{color:#fff;text-align: center;}
 		.footer_btm_text{font-size: 12px;font-style: italic;}
-		.topSideLogo{height: 86px;width: 100%;display: flex;justify-content: center;align-items: center;}
-		amp-sidebar{background-image: linear-gradient(90deg,#0db3c7 0,#77e0ec);}
-		.topSideLogo{background:#fff;}
-		.
+		.topSideLogo{background:#fff;height: 88px;width: 100%;display: flex;justify-content: center;align-items: center;}
+		amp-sidebar{background-image: linear-gradient(90deg,#0db3c7 0,#77e0ec);min-width: 324px ! important;}
+		amp-sidebar ul{
+		list-style:none;color:#fff;
+		}
+		amp-sidebar ul li a{color: #655853;text-decoration:none;}
+		.navLists > li{margin:20px 0}
+		.navLsit h3 {
+		background:transparent;border:none;font-weight:normal;}
+		.sidSubNav li{margin:5px 0;}
+		.sidSubNav{padding:0 15px;}
+		.navLists{margin-top: 85px;}
 	</style>
   </head>
   <body>
     <nav class="navbar">
 		<a href="#"><amp-img	src="img/logo.png"  width="170" height="50" ></amp-img></a>
-		<div class="ffrc float_right font30px text_upper mrgn_top nav_btn  clear "  on="tap:sidebar.toggle"
-  class="ampstart-btn caps m2"> 
+		<div class="ffrc float_right font30px text_upper mrgn_top nav_btn  clear " tabindex="3"  on="tap:sidebar.toggle"
+  class="ampstart-btn caps m2" role="button"> 
 			<span class="theme_color nav_btn clear"><i class="fa fa-bars"></i></span>
 		</div>
 	</nav>
@@ -248,12 +257,10 @@
 			<div class="paraExplnd cCard">
 				<p>Greenery, In-Apartment Kitchens, Room Service, Complimentary Breakfast &  Gym</p>
 			</div>		
-		</section>	
-		
-		
-		
+		</section>		
 	</amp-accordion>
-		<amp-accordion>
+	
+	<amp-accordion>
 		<section class="acord">
 			<h3 class="acordHed">Professional Management & A Customer First Company</h3>
 			<div  class="paraExplnd">		
@@ -267,16 +274,15 @@
 	</amp-accordion>
 	
 	<ul class="award_img_list">
-		<li><amp-img on="tap:lightbox1" role="button" src="img/award1.JPG" width="110" height="140"></amp-img></li>
+		<li><amp-img on="tap:lightbox1" tabindex="0" role="button" src="img/award1.JPG" width="110" height="140"></amp-img></li>
 				
-		<li><amp-img on="tap:lightbox1" role="button" src="img/award2.JPG" width="110" height="140"></amp-img></li>
+		<li><amp-img on="tap:lightbox1" tabindex="1" role="button" src="img/award2.JPG" width="110" height="140"></amp-img></li>
 
-		<li><amp-img on="tap:lightbox1" role="button" src="img/award2.JPG" width="110" height="140"></amp-img></li>
+		<li><amp-img on="tap:lightbox1" tabindex="2" role="button" src="img/award2.JPG" width="110" height="140"></amp-img></li>
 	</ul>
 
-<amp-image-lightbox id="lightbox1" layout="nodisplay"></amp-image-lightbox>
-<amp-image-lightbox id="lightbox2" layout="nodisplay"></amp-image-lightbox>
-<amp-image-lightbox id="lightbox3" layout="nodisplay"></amp-image-lightbox>
+	<amp-image-lightbox id="lightbox1" layout="nodisplay"></amp-image-lightbox>
+
 	
 	<footer>
 		<p class="ancrList"><a href="/franchise.html">Franchise</a>|<a href="/policies.html">Policies</a>|<a href="/book-now.html">Book Now</a>|<a href="/blog/">Blog</a></p>
@@ -293,8 +299,7 @@
 	
 	<amp-sidebar id="sidebar"
 	  layout="nodisplay"
-	  side="left">
-	  
+	  side="left">	  
 		<div class="topSideLogo">
 		  <amp-img class="amp-close-image"
 			src="img/logo.png"
@@ -305,36 +310,134 @@
 			role="button"
 			tabindex="0"></amp-img>
 		</div>
-	  <ul>
+	  <ul class="navLists">
 		<li>
 		  <a href="/">Home</a>
 		</li>
-		<li> Nav item 1</li>
+		<hr>
 		<li>
-		  <amp-fit-text width="220"
-			height="20"
-			layout="responsive"
-			max-font-size="24">
-			Nav item 2 - &lt;amp-fit-text&gt;
-		  </amp-fit-text>
+			<amp-accordion>
+				<section class="navLsit">
+					<h3>Service Apartments</h3>					
+						<ul class="sidSubNav">
+							<li>
+							  <amp-fit-text width="200"
+								height="15"
+								layout="responsive">
+									<a href="/service-apartments-in-gurgaon.html">Service Apartments in Gurgaon</a>
+							  </amp-fit-text>
+							</li>
+							<li>
+							  <amp-fit-text width="200"
+								height="15"
+								layout="responsive">
+								<a href="/service-apartments-in-goa.html">Service Apartments in Goa</a>
+							  </amp-fit-text>
+							</li>
+							<li>
+							  <amp-fit-text width="200"
+								height="15"
+								layout="responsive">
+								<a href="/service-apartments-in-delhi.html">Service Apartments in Delhi</a>
+							  </amp-fit-text>							
+							</li>
+						</ul>
+				</section>
+			</amp-accordion>		
 		</li>
+		<hr>
 		<li>
-		  <amp-fit-text width="220"
-			height="20"
-			layout="responsive"
-			max-font-size="24">
-			Nav item 3 - &lt;amp-fit-text&gt; longer text
-		  </amp-fit-text>
+			<amp-accordion>
+				<section class="navLsit">
+					<h3>Guest House</h3>					
+						<ul class="sidSubNav">
+							<li>
+							  <amp-fit-text width="200"
+								height="15"
+								layout="responsive">
+									<a href="/service-apartments-in-gurgaon.html">Service Apartments in Gurgaon</a>
+							  </amp-fit-text>
+							</li>
+							<li>
+							  <amp-fit-text width="200"
+								height="15"
+								layout="responsive">
+								<a href="/service-apartments-in-goa.html">Service Apartments in Goa</a>
+							  </amp-fit-text>
+							</li>
+							<li>
+							  <amp-fit-text width="200"
+								height="15"
+								layout="responsive">
+								<a href="/service-apartments-in-delhi.html">Service Apartments in Delhi</a>
+							  </amp-fit-text>							
+							</li>
+						</ul>
+				</section>
+			</amp-accordion>
 		</li>
-		<li> Nav item 4 - Image
-		  <amp-img class="amp-sidebar-image"
-			src="/img/favicon.png"
-			width="20"
-			height="20"
-			alt="an image"></amp-img>
+		<hr>
+		<li>
+			<amp-accordion>
+				<section class="navLsit">
+					<h3>Popular Properties</h3>					
+						<ul class="sidSubNav">
+							<li>
+							  <amp-fit-text width="200"
+								height="15"
+								layout="responsive">
+									<a href="/service-apartments-in-gurgaon.html">Service Apartments in Gurgaon</a>
+							  </amp-fit-text>
+							</li>
+							<li>
+							  <amp-fit-text width="200"
+								height="15"
+								layout="responsive">
+								<a href="/service-apartments-in-goa.html">Service Apartments in Goa</a>
+							  </amp-fit-text>
+							</li>
+							<li>
+							  <amp-fit-text width="200"
+								height="15"
+								layout="responsive">
+								<a href="/service-apartments-in-delhi.html">Service Apartments in Delhi</a>
+							  </amp-fit-text>							
+							</li>
+						</ul>
+				</section>
+			</amp-accordion>
 		</li>
-		<li> Nav item 5</li>
-		<li> Nav item 6</li>
+		<hr>
+		<li>
+			<amp-accordion>
+				<section class="navLsit">
+					<h3>About Perch</h3>					
+						<ul class="sidSubNav">
+							<li>
+							  <amp-fit-text width="200"
+								height="15"
+								layout="responsive">
+									<a href="/service-apartments-in-gurgaon.html">Service Apartments in Gurgaon</a>
+							  </amp-fit-text>
+							</li>
+							<li>
+							  <amp-fit-text width="200"
+								height="15"
+								layout="responsive">
+								<a href="/service-apartments-in-goa.html">Service Apartments in Goa</a>
+							  </amp-fit-text>
+							</li>
+							<li>
+							  <amp-fit-text width="200"
+								height="15"
+								layout="responsive">
+								<a href="/service-apartments-in-delhi.html">Service Apartments in Delhi</a>
+							  </amp-fit-text>							
+							</li>
+						</ul>
+				</section>
+			</amp-accordion>
+		</li>
 	  </ul>
 	</amp-sidebar>	
 	
