@@ -20,6 +20,8 @@
 	<script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
 	<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 	<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+	<script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+	<script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
 	<!-- <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script> -->
     <script type="application/ld+json">
       {
@@ -147,6 +149,55 @@
 		.sidSubNav{padding:0 15px;}
 		.navLists{margin-top: 60px;}
 		.closeNav{position:absolute;color:#fff;top:20px;right:20px;font-size:25px;}
+		.overleyLightBox{position:absolute;top:0px;left:0px;right:0px;bottom:0px;background:linear-gradient(90deg,#0db3c7 0,#77e0ec);color:#fff;}
+		
+	   .ampTabContainer {
+		margin-top:100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+	amp-selector [option][selected] {outline:none;padding:5px 0;}
+    
+    .tabButton[selected] {
+        outline: none;
+        background: #fff;
+		color:#0db3c7;
+    }
+    
+    .tabButton {
+        list-style: none;
+        flex-grow: 1;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .tabContent {
+        display: none;
+        width: 100%;
+        order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
+    }
+    
+    .tabButton[selected]+.tabContent {
+		display:flex;
+		justify-content:center;		
+    }
+
+    /* For example below (not required) */
+    .itemCustom {
+        border: 1px solid #000;
+        height: 280px;
+        width: 380px;
+        margin: 10px;
+        text-align: center;
+        padding-top: 140px;
+    }
+    amp-selector {
+      padding: 1rem;
+      margin: 1rem;
+    }
+	.tabContent	ul{padding:0px;}
+	.tabContent	ul li{margin:20px;}
+		
 	</style>
   </head>
   <body>
@@ -217,7 +268,7 @@
 		</amp-img>
 	</amp-carousel>
 	
-	<div class="textOnImg">
+	<div class="textOnImg" on="tap:my-lightbox" role="button" tabindex="6">
 		<p>All Properties</p>
 	</div>
 	
@@ -442,6 +493,36 @@
 	  </ul>
 	</amp-sidebar>	
 	
+	<amp-lightbox id="my-lightbox"
+	  layout="nodisplay">
+		<div class="overleyLightBox">
+			<amp-selector role="tablist"
+			  layout="container"
+			  class="ampTabContainer">
+			  <div role="tab"
+				class="tabButton" selected
+				option="a">Guest Houses</div>
+			  <div role="tabpanel"
+				class="tabContent" >
+					<ul>
+						<li><a>Perch Service Apartment (Sector 40)</a></li>
+						<li><a>Perch Grove Apartments</a></li>
+						<li><a>Perch Villa - DLF Cyber City</a></li>
+					</ul>
+			  </div>
+			  <div role="tab"
+				class="tabButton"
+				option="b">Guest Houses</div>
+			  <div role="tabpanel"
+				class="tabContent">
+					<ul>
+						<li><a>Perch Arbor Suites</a></li>
+						<li><a>Perch Arbor - Golf Course Road</a></li>
+					</ul>
+			  </div>
+			</amp-selector>
+		</div>
+	</amp-lightbox>	
 	
   </body>
 </html>
