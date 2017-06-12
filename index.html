@@ -148,15 +148,15 @@
 		.sidSubNav li{margin:5px 0;}
 		.sidSubNav{padding:0 15px;}
 		.navLists{margin-top: 60px;}
-		.closeNav{position:absolute;color:#fff;top:20px;right:20px;font-size:25px;}
+		.closeNav{position:absolute;color:#fff;top:20px;right:20px;font-size:25px;z-index:5;}
 		.overleyLightBox{position:absolute;top:0px;left:0px;right:0px;bottom:0px;background:linear-gradient(90deg,#0db3c7 0,#77e0ec);color:#fff;}
-		
+		.closeNav{position:absolute;color:#fff;top:20px;right:20px;font-size:25px;}
 	   .ampTabContainer {
 		margin-top:100px;
         display: flex;
-        flex-wrap: wrap;
-    }
-	amp-selector [option][selected] {outline:none;padding:5px 0;}
+        flex-wrap: wrap;}
+		.outlnNone{outline:none;}
+	amp-selector [option][selected] {outline:none;padding:10px 0;}
     
     .tabButton[selected] {
         outline: none;
@@ -165,6 +165,7 @@
     }
     
     .tabButton {
+		padding: 10px 0;
         list-style: none;
         flex-grow: 1;
         text-align: center;
@@ -283,21 +284,21 @@
 	
 	<amp-accordion>
 		<section class="OurClnt">
-			<h3>Online Reviews<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
+			<h3 class="outlnNone">Online Reviews<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
 			<div  class="paraExplnd cCard">		
 				<p>Perch has over 1500 genuine reviews on Tripadvisor, Booking.com, Google & Airbnb</p>
 			</div>
 		</section>
 	  
 		<section class="OurClnt">
-			<h3>Multiple Locations<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
+			<h3 class="outlnNone">Multiple Locations<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
 			<div  class="paraExplnd cCard">
 				<p>HUDA Metro, Golf Course Road, Near Medanta, Sohna Road, DLF Cyber City, Vagator (Goa)</p>
 			</div>		
 		</section>
 		
 		<section class="OurClnt">
-				<h3>Fully Serviced<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
+				<h3 class="outlnNone">Fully Serviced<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
 			</div>
 			<div  class="paraExplnd cCard">
 				<p>24/7 Front Desk, Daily Housekeeping, Concierge, Gym, In-House Cab Service, Laundry</p>
@@ -305,7 +306,7 @@
 		</section>
 		
 		<section class="OurClnt">
-			<h3>Great Amenities<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
+			<h3 class="outlnNone">Great Amenities<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
 			<div class="paraExplnd cCard">
 				<p>Greenery, In-Apartment Kitchens, Room Service, Complimentary Breakfast &  Gym</p>
 			</div>		
@@ -314,7 +315,7 @@
 	
 	<amp-accordion>
 		<section class="acord">
-			<h3 class="acordHed">Professional Management & A Customer First Company</h3>
+			<h3 class="acordHed outlnNone">Professional Management & A Customer First Company</h3>
 			<div  class="cCard para">		
 				<p>Perch Service Apartments is a professionally run organization and strives for 100% guest satisfaction every time. Each of our accommodation in Gurgaon, Delhi NCR and Goa has won awards; Most Promising Service Apartment Provider (2013,14) and Best Guest House (2015,16) as well as Booking.com &amp; Tripadvisor awards. We love getting feedback and use this to help us improve our services &amp; product. If you are unhappy about some aspect please do reach out to Madhu Singh - info@theperch.in</p>
 
@@ -338,7 +339,7 @@
 	
 	<footer>
 		<p class="ancrList"><a href="/franchise.html">Franchise</a>|<a href="/policies.html">Policies</a>|<a href="/book-now.html">Book Now</a>|<a href="/blog/">Blog</a></p>
-		<h3 class="para_heding">Call us: +91-8800461053</h3>
+		<h3 class="para_heding outlnNone">Call us: +91-8800461053</h3>
 		
 		<ul class="award_img_list">
 			<a href="https://www.facebook.com/theperch.in" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
@@ -370,7 +371,7 @@
 		<li>
 			<amp-accordion>
 				<section class="navLsit">
-					<h3>Service Apartments</h3>					
+					<h3 class="outlnNone">Service Apartments</h3>					
 						<ul class="sidSubNav">
 							<li>
 							  <amp-fit-text width="200"
@@ -401,7 +402,7 @@
 		<li>
 			<amp-accordion>
 				<section class="navLsit">
-					<h3>Guest House</h3>					
+					<h3 class="outlnNone">Guest House</h3>					
 						<ul class="sidSubNav">
 							<li>
 							  <amp-fit-text width="200"
@@ -432,7 +433,7 @@
 		<li>
 			<amp-accordion>
 				<section class="navLsit">
-					<h3>Popular Properties</h3>					
+					<h3 class="outlnNone">Popular Properties</h3>					
 						<ul class="sidSubNav">
 							<li>
 							  <amp-fit-text width="200"
@@ -463,7 +464,7 @@
 		<li>
 			<amp-accordion>
 				<section class="navLsit">
-					<h3>About Perch</h3>					
+					<h3 class="outlnNone">About Perch</h3>					
 						<ul class="sidSubNav">
 							<li>
 							  <amp-fit-text width="200"
@@ -495,10 +496,11 @@
 	
 	<amp-lightbox id="my-lightbox"
 	  layout="nodisplay">
+	  <span class="closeNav" on="tap:my-lightbox.close" role="button" tabindex="7" >X</span>
 		<div class="overleyLightBox">
 			<amp-selector role="tablist"
 			  layout="container"
-			  class="ampTabContainer">
+			  class="ampTabContainer">			  
 			  <div role="tab"
 				class="tabButton" selected
 				option="a">Guest Houses</div>
