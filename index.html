@@ -10,6 +10,8 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 	<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+	<script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+	<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 	<!-- <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script> -->
     <script type="application/ld+json">
       {
@@ -89,7 +91,7 @@
 		}
 		
 		h1{padding:10px;font-size: 3rem;color: #000;}
-		.para{padding:0 20px;color: #6b6a6a;letter-spacing: 1.5px;text-align:justify;}
+		.para{padding:0 20px;color: #272727;letter-spacing: 1.5px;text-align:justify;}
 		.OurClnt {margin: 15px; margin-bottom: 0px;}
 		.OurClnt > h3{padding:10px;font-weight:normal;}
 		.acord{padding:10px;}
@@ -130,7 +132,8 @@
   <body>
     <nav class="navbar">
 		<a href="#"><amp-img	src="img/logo.png"  width="170" height="50" ></amp-img></a>
-		<div class="ffrc float_right font30px text_upper mrgn_top nav_btn  clear "> 
+		<div class="ffrc float_right font30px text_upper mrgn_top nav_btn  clear "  on="tap:sidebar.toggle"
+  class="ampstart-btn caps m2"> 
 			<span class="theme_color nav_btn clear"><i class="fa fa-bars"></i></span>
 		</div>
 	</nav>
@@ -254,12 +257,17 @@
 	</amp-accordion>
 	
 	<ul class="award_img_list">
-		<li><amp-img src="img/award1.JPG" width="110" height="140"></amp-img></li>
+		<li><amp-img on="tap:lightbox1" role="button" src="img/award1.JPG" width="110" height="140"></amp-img></li>
 				
-		<li><amp-img src="img/award2.JPG" width="110" height="140"></amp-img></li>
+		<li><amp-img on="tap:lightbox1" role="button" src="img/award2.JPG" width="110" height="140"></amp-img></li>
 
-		<li><amp-img src="img/award2.JPG" width="110" height="140"></amp-img></li>
-	</ul>	
+		<li><amp-img on="tap:lightbox1" role="button" src="img/award2.JPG" width="110" height="140"></amp-img></li>
+	</ul>
+
+<amp-image-lightbox id="lightbox1" layout="nodisplay"></amp-image-lightbox>
+<amp-image-lightbox id="lightbox2" layout="nodisplay"></amp-image-lightbox>
+<amp-image-lightbox id="lightbox3" layout="nodisplay"></amp-image-lightbox>
+	
 	<footer>
 		<p class="ancrList"><a href="/franchise.html">Franchise</a>|<a href="/policies.html">Policies</a>|<a href="/book-now.html">Book Now</a>|<a href="/blog/">Blog</a></p>
 		<h3 class="para_heding">Call us: +91-8800461053</h3>
@@ -272,6 +280,51 @@
 		</ul>
 		<span class="footer_btm_text">Copyright © 2016 The Perch Service Apartments. All rights reserved.</span>	
 	</footer>
+	
+	<amp-sidebar id="sidebar"
+	  layout="nodisplay"
+	  side="right">
+	  <amp-img class="amp-close-image"
+		src="/img/ic_close_black_18dp_2x.png"
+		width="20"
+		height="20"
+		alt="close sidebar"
+		on="tap:sidebar.close"
+		role="button"
+		tabindex="0"></amp-img>
+	  <ul>
+		<li>
+		  <a href="/">Home</a>
+		</li>
+		<li> Nav item 1</li>
+		<li>
+		  <amp-fit-text width="220"
+			height="20"
+			layout="responsive"
+			max-font-size="24">
+			Nav item 2 - &lt;amp-fit-text&gt;
+		  </amp-fit-text>
+		</li>
+		<li>
+		  <amp-fit-text width="220"
+			height="20"
+			layout="responsive"
+			max-font-size="24">
+			Nav item 3 - &lt;amp-fit-text&gt; longer text
+		  </amp-fit-text>
+		</li>
+		<li> Nav item 4 - Image
+		  <amp-img class="amp-sidebar-image"
+			src="/img/favicon.png"
+			width="20"
+			height="20"
+			alt="an image"></amp-img>
+		</li>
+		<li> Nav item 5</li>
+		<li> Nav item 6</li>
+	  </ul>
+	</amp-sidebar>	
+	
 	
   </body>
 </html>
