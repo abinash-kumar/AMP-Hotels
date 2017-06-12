@@ -137,7 +137,7 @@
 		.para_heding{color:#fff;text-align: center;margin:10px;}
 		.footer_btm_text{font-size: 12px;font-style: italic;}
 		.topSideLogo{background:#fff;height: 135px;width: 100%;display: flex;justify-content: center;align-items: center;}
-		amp-sidebar{min-width: 100% ! important;background: rgba(0, 0, 0, 0.93);}
+		amp-sidebar{min-width: 260px ! important;background: rgba(0, 0, 0, 0.93);background-image: linear-gradient(90deg,#0db3c7 0,#77e0ec);}
 		amp-sidebar ul{list-style:none;color:#fff;}
 		amp-sidebar ul li a{color: #655853;text-decoration:none;}
 		.navLists > li{margin:20px 0}
@@ -146,7 +146,6 @@
 		.sidSubNav li{margin:5px 0;}
 		.sidSubNav{padding:0 15px;}
 		.navLists{margin-top: 60px;}
-		.navWrap{max-width: 260px;background: linear-gradient(90deg,#0db3c7 0,#77e0ec);min-height:100%;}
 		.closeNav{position:absolute;color:#fff;top:20px;right:20px;font-size:25px;}
 	</style>
   </head>
@@ -302,148 +301,145 @@
 	<amp-sidebar id="sidebar"
 	  layout="nodisplay"
 	  side="left">
-		<span class="closeNav" on="tap:sidebar.toggle" role="button" tabindex="5" >X</span>
-		<div class="navWrap">
-			<div class="topSideLogo">
-			  <amp-img class="amp-close-image"
-				src="img/logo.png"
-				width="170"
-				height="50"
-				alt="close sidebar"
-				on="tap:sidebar.close"
-				role="button"
-				tabindex="0"></amp-img>
-			</div>
-		  <ul class="navLists">
-			<li>
-			  <a href="/">Home</a>
-			</li>
-			<hr>
-			<li>
-				<amp-accordion>
-					<section class="navLsit">
-						<h3>Service Apartments</h3>					
-							<ul class="sidSubNav">
-								<li>
-								  <amp-fit-text width="200"
-									height="20"
-									layout="responsive">
-										<a href="/service-apartments-in-gurgaon.html">Service Apartments in Gurgaon</a>
-								  </amp-fit-text>
-								</li>
-								<li>
-								  <amp-fit-text width="200"
-									height="20"
-									layout="responsive">
-									<a href="/service-apartments-in-goa.html">Service Apartments in Goa</a>
-								  </amp-fit-text>
-								</li>
-								<li>
-								  <amp-fit-text width="200"
-									height="20"
-									layout="responsive">
-									<a href="/service-apartments-in-delhi.html">Service Apartments in Delhi</a>
-								  </amp-fit-text>							
-								</li>
-							</ul>
-					</section>
-				</amp-accordion>		
-			</li>
-			<hr>
-			<li>
-				<amp-accordion>
-					<section class="navLsit">
-						<h3>Guest House</h3>					
-							<ul class="sidSubNav">
-								<li>
-								  <amp-fit-text width="200"
-									height="20"
-									layout="responsive">
-										<a href="/service-apartments-in-gurgaon.html">Service Apartments in Gurgaon</a>
-								  </amp-fit-text>
-								</li>
-								<li>
-								  <amp-fit-text width="200"
-									height="20"
-									layout="responsive">
-									<a href="/service-apartments-in-goa.html">Service Apartments in Goa</a>
-								  </amp-fit-text>
-								</li>
-								<li>
-								  <amp-fit-text width="200"
-									height="20"
-									layout="responsive">
-									<a href="/service-apartments-in-delhi.html">Service Apartments in Delhi</a>
-								  </amp-fit-text>							
-								</li>
-							</ul>
-					</section>
-				</amp-accordion>
-			</li>
-			<hr>
-			<li>
-				<amp-accordion>
-					<section class="navLsit">
-						<h3>Popular Properties</h3>					
-							<ul class="sidSubNav">
-								<li>
-								  <amp-fit-text width="200"
-									height="20"
-									layout="responsive">
-										<a href="/service-apartments-in-gurgaon.html">Service Apartments in Gurgaon</a>
-								  </amp-fit-text>
-								</li>
-								<li>
-								  <amp-fit-text width="200"
-									height="20"
-									layout="responsive">
-									<a href="/service-apartments-in-goa.html">Service Apartments in Goa</a>
-								  </amp-fit-text>
-								</li>
-								<li>
-								  <amp-fit-text width="200"
-									height="20"
-									layout="responsive">
-									<a href="/service-apartments-in-delhi.html">Service Apartments in Delhi</a>
-								  </amp-fit-text>							
-								</li>
-							</ul>
-					</section>
-				</amp-accordion>
-			</li>
-			<hr>
-			<li>
-				<amp-accordion>
-					<section class="navLsit">
-						<h3>About Perch</h3>					
-							<ul class="sidSubNav">
-								<li>
-								  <amp-fit-text width="200"
-									height="20"
-									layout="responsive">
-										<a href="/service-apartments-in-gurgaon.html">Service Apartments in Gurgaon</a>
-								  </amp-fit-text>
-								</li>
-								<li>
-								  <amp-fit-text width="200"
-									height="20"
-									layout="responsive">
-									<a href="/service-apartments-in-goa.html">Service Apartments in Goa</a>
-								  </amp-fit-text>
-								</li>
-								<li>
-								  <amp-fit-text width="200"
-									height="20"
-									layout="responsive">
-									<a href="/service-apartments-in-delhi.html">Service Apartments in Delhi</a>
-								  </amp-fit-text>							
-								</li>
-							</ul>
-					</section>
-				</amp-accordion>
-			</li>
-		  </ul>
-	  </div>
+		<div class="topSideLogo">
+		  <amp-img class="amp-close-image"
+			src="img/logo.png"
+			width="170"
+			height="50"
+			alt="close sidebar"
+			on="tap:sidebar.close"
+			role="button"
+			tabindex="0"></amp-img>
+		</div>
+	  <ul class="navLists">
+		<li>
+		  <a href="/">Home</a>
+		</li>
+		<hr>
+		<li>
+			<amp-accordion>
+				<section class="navLsit">
+					<h3>Service Apartments</h3>					
+						<ul class="sidSubNav">
+							<li>
+							  <amp-fit-text width="200"
+								height="20"
+								layout="responsive">
+									<a href="/service-apartments-in-gurgaon.html">Service Apartments in Gurgaon</a>
+							  </amp-fit-text>
+							</li>
+							<li>
+							  <amp-fit-text width="200"
+								height="20"
+								layout="responsive">
+								<a href="/service-apartments-in-goa.html">Service Apartments in Goa</a>
+							  </amp-fit-text>
+							</li>
+							<li>
+							  <amp-fit-text width="200"
+								height="20"
+								layout="responsive">
+								<a href="/service-apartments-in-delhi.html">Service Apartments in Delhi</a>
+							  </amp-fit-text>							
+							</li>
+						</ul>
+				</section>
+			</amp-accordion>		
+		</li>
+		<hr>
+		<li>
+			<amp-accordion>
+				<section class="navLsit">
+					<h3>Guest House</h3>					
+						<ul class="sidSubNav">
+							<li>
+							  <amp-fit-text width="200"
+								height="20"
+								layout="responsive">
+									<a href="/service-apartments-in-gurgaon.html">Service Apartments in Gurgaon</a>
+							  </amp-fit-text>
+							</li>
+							<li>
+							  <amp-fit-text width="200"
+								height="20"
+								layout="responsive">
+								<a href="/service-apartments-in-goa.html">Service Apartments in Goa</a>
+							  </amp-fit-text>
+							</li>
+							<li>
+							  <amp-fit-text width="200"
+								height="20"
+								layout="responsive">
+								<a href="/service-apartments-in-delhi.html">Service Apartments in Delhi</a>
+							  </amp-fit-text>							
+							</li>
+						</ul>
+				</section>
+			</amp-accordion>
+		</li>
+		<hr>
+		<li>
+			<amp-accordion>
+				<section class="navLsit">
+					<h3>Popular Properties</h3>					
+						<ul class="sidSubNav">
+							<li>
+							  <amp-fit-text width="200"
+								height="20"
+								layout="responsive">
+									<a href="/service-apartments-in-gurgaon.html">Service Apartments in Gurgaon</a>
+							  </amp-fit-text>
+							</li>
+							<li>
+							  <amp-fit-text width="200"
+								height="20"
+								layout="responsive">
+								<a href="/service-apartments-in-goa.html">Service Apartments in Goa</a>
+							  </amp-fit-text>
+							</li>
+							<li>
+							  <amp-fit-text width="200"
+								height="20"
+								layout="responsive">
+								<a href="/service-apartments-in-delhi.html">Service Apartments in Delhi</a>
+							  </amp-fit-text>							
+							</li>
+						</ul>
+				</section>
+			</amp-accordion>
+		</li>
+		<hr>
+		<li>
+			<amp-accordion>
+				<section class="navLsit">
+					<h3>About Perch</h3>					
+						<ul class="sidSubNav">
+							<li>
+							  <amp-fit-text width="200"
+								height="20"
+								layout="responsive">
+									<a href="/service-apartments-in-gurgaon.html">Service Apartments in Gurgaon</a>
+							  </amp-fit-text>
+							</li>
+							<li>
+							  <amp-fit-text width="200"
+								height="20"
+								layout="responsive">
+								<a href="/service-apartments-in-goa.html">Service Apartments in Goa</a>
+							  </amp-fit-text>
+							</li>
+							<li>
+							  <amp-fit-text width="200"
+								height="20"
+								layout="responsive">
+								<a href="/service-apartments-in-delhi.html">Service Apartments in Delhi</a>
+							  </amp-fit-text>							
+							</li>
+						</ul>
+				</section>
+			</amp-accordion>
+		</li>
+	  </ul>
 	</amp-sidebar>	
 	
 	
