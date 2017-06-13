@@ -18,7 +18,7 @@
   "theme_color": "#0db3c7",
     "serviceworker": {
     "src": "sw.js",
-    "scope": "../perch-AMP/",
+    "scope": "/perch-AMP/",
     "use_cache": true
   }
 }
