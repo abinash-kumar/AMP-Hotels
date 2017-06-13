@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>Hello, AMPs</title>
+    <title>perch</title>
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#0db3c7">
 	<meta name="color" content="#ffffff">
@@ -11,7 +11,7 @@
 	<meta name="msapplication-navbutton-color" content="#0db3c7">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#0db3c7">
-    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+	<link rel="canonical" href="https://abinash-kumar.github.io/perch-AMP/" /> 
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -23,6 +23,8 @@
 	<script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
 	<script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
 	<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+	<script async custom-element="amp-app-banner" src="https://cdn.ampproject.org/v0/amp-app-banner-0.1.js"></script>
+	<link rel="manifest" href="/amp-app-banner-manifest.json">
 	<!-- <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script> -->
     <script type="application/ld+json">
       {
@@ -148,7 +150,7 @@
 		background:transparent;border:none;font-weight:normal;}
 		.sidSubNav li{margin:5px 0;}
 		.sidSubNav{padding:0 15px;}
-		.navLists{margin-top: 60px;}
+		.navLists{margin-top: 60px;margin-bottom: 60px;}
 		.closeNav{position:absolute;color:#fff;top:20px;right:20px;font-size:25px;z-index:5;}
 		.overleyLightBox{position:absolute;top:0px;left:0px;right:0px;bottom:0px;background:linear-gradient(90deg,#0db3c7 0,#77e0ec);color:#fff;}
 		.closeNav{position:absolute;color:#fff;top:20px;right:20px;font-size:25px;}
@@ -203,6 +205,20 @@
 	</style>
   </head>
   <body>
+  <amp-app-banner layout="nodisplay"
+  id="banner">
+  <div id="banner-logo">
+    <amp-img src="https://abinash-kumar.github.io/perch-AMP/img/perch.png"
+      width="50"
+      height="43"
+      layout="fixed"></amp-img>
+  </div>
+  <div id="banner-text">Welcome to perch The best hotel site</div>
+  <div id="banner-action">
+    <button class="ampstart-btn mr1 caps"
+      open-button>View in app</button>
+  </div>
+</amp-app-banner>
     <nav class="navbar">
 		<a href="#"><amp-img	src="img/logo.png"  width="170" height="50" ></amp-img></a>
 		<div class="ffrc float_right font30px text_upper mrgn_top nav_btn  clear " tabindex="3"   on="tap:sidebar.toggle"

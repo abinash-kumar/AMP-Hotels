@@ -1,0 +1,19 @@
+{
+  "name": "Perch service Apartment",
+  "short_name": "Perch by Abinash",
+  "icons": [{
+    "src": "https://abinash-kumar.github.io/perch-AMP/img/perch.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },
+  {
+    "src": "https://abinash-kumar.github.io/perch-AMP/img/perch.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "start_url": "https://abinash-kumar.github.io/perch-AMP/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FAFAFA",
+  "theme_color": "#0db3c7"
+}
