@@ -20,5 +20,5 @@
     "src": "sw.js",
     "scope": "/racer/",
     "use_cache": false
-  },
+  }
 }
