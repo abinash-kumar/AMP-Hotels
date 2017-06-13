@@ -15,5 +15,10 @@
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#FAFAFA",
-  "theme_color": "#0db3c7"
+  "theme_color": "#0db3c7",
+    "serviceworker": {
+    "src": "sw.js",
+    "scope": "/racer/",
+    "use_cache": false
+  },
 }
