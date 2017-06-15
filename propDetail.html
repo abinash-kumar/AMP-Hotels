@@ -176,7 +176,7 @@
 	  layout="fixed-height"
 	  src="json/propertyList.json" class="m1">	  
 		 <template type="amp-mustache" id={{overleyId}}>
-			<a href="#" on="tap:{{overleyId}}" role="button" tabindex="1">
+			<div on="tap:{{overleyId}}" role="button" tabindex="1">
 				<div class="propCardLst cCard">
 					<div class="w38 flexCentr">
 						<amp-img width="130"
@@ -191,7 +191,7 @@
 						<p class="theme-color"><i class="fa fa-inr"></i>&nbsp;{{price}}</p>
 					</div>
 				</div>
-			</a>
+			</div>
 		</template>	
 	</amp-list>		
 <!-- .........................................................................................	 -->
