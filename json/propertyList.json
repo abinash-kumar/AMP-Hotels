@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "type": "3Bhk",
+      "type": "1 Bhk",
       "price": "5900",
       "overleyId": "overleyId-1",
       "imgUrl": "http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg.jpg",
@@ -10,7 +10,7 @@
 	  "detail" : "any other property detail can be enter enter here"
     },
     {
-      "type": "4Bhk",
+      "type": "2 Bhk",
       "price": "7900",
       "overleyId": "overleyId-2",
       "imgUrl": "http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg.jpg",
@@ -19,7 +19,7 @@
 	  "detail" : "any other property detail can be enter enter here"
     },
     {
-      "type": "4Bhk",
+      "type": "3 Bhk",
       "price": "7900",
       "overleyId": "overleyId-3",
       "imgUrl": "http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg.jpg",
