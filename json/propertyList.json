@@ -17,6 +17,15 @@
 	  "altTag": "perch apartment",
 	  "description": "enter a small property description here",
 	  "detail" : "any other property detail can be enter enter here"
+    },
+    {
+      "type": "4Bhk",
+      "price": "7900",
+      "overleyId": "overleyId-3",
+      "imgUrl": "http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg.jpg",
+	  "altTag": "perch apartment",
+	  "description": "enter a small property description here",
+	  "detail" : "any other property detail can be enter enter here"
     }	
   ]
 }
