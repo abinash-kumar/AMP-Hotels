@@ -47,7 +47,7 @@
 			
 			/* FOR THIS PAGE CSS HERE */
 			body{background:#f2f2f2;}
-			.overleyLightBoxProp{position:absolute;min-height: 100%;color:#fff;top:0;left:0;right:0;bottom:0;background:linear-gradient(90deg,#000,#77e0ec)}
+			.overleyLightBoxProp{position:absolute;min-height: 100%;color:#fff;top:0;left:0;right:0;bottom:0;background:linear-gradient(90deg,#000,#353535)}
 			/* css for share overLey */
 			.overleyLightBox ul{list-style:none;padding:0;}
 			.overleyLightBox ul li{width:120px;height:120px;border-radius:50%;font-size: 6rem; display:flex;justify-content:center;align-items:center;margin:10px;}
@@ -502,13 +502,56 @@
 	<amp-lightbox id="propOvrley1"
 	  layout="nodisplay">
 	  <span class="closeNav" on="tap:propOvrley1.close" role="button" tabindex="7" >X</span>
-		<div class="overleyLightBoxProp flexCentr">
-			<ul>
-				<li class="facbok"><i class="fa fa-facebook"></i></li>
-				<li class="whatsap"><i class="fa fa-facebook "></i></li>
-				<li class="emil"><i class="fa fa-facebook "></i></li>
-				<li class="call"><i class="fa fa-facebook"></i></li>
-			</ul>
+		<div class="overleyLightBoxProp">
+			<amp-carousel 
+			  width="400"
+			  height="300"
+			  layout="responsive"
+			  type="slides"
+			  autoplay
+			  delay="5000">						
+				<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-1.jpg"
+					width="400"
+					height="350"
+					layout="responsive"
+					alt="a sample image">
+				</amp-img>
+				
+				<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-2.jpg"
+					width="400"
+					height="350"
+					layout="responsive"
+					alt="a sample image">
+				</amp-img>
+				
+				<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg"
+					width="400"
+					height="350"
+					layout="responsive"
+					alt="a sample image">
+				</amp-img>
+				
+				<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-1.jpg.jpg"
+					width="400"
+					height="350"
+					layout="responsive"
+					alt="a sample image">
+				</amp-img>
+				
+				<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-2.jpg.jpg"
+					width="400"
+					height="350"
+					layout="responsive"
+					alt="a sample image">
+				</amp-img>
+				
+				<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg.jpg"
+					width="400"
+					height="350"
+					layout="responsive"
+					alt="a sample image">
+				</amp-img>
+			</amp-carousel>	
 		</div>
 	</amp-lightbox>	
 <!-- ........................................................................................ -->
