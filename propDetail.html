@@ -176,7 +176,7 @@
 	  layout="fixed-height"
 	  src="json/propertyList.json" class="m1">	  
 		 <template type="amp-mustache" id={{overleyId}}>
-			<a href="#" on="tap:"{{overleyId}} role="button" tabindex="1">
+			<a href="#" on="tap:{{overleyId}}" role="button" tabindex="1">
 				<div class="propCardLst cCard">
 					<div class="w38 flexCentr">
 						<amp-img width="130"
@@ -196,8 +196,8 @@
 	</amp-list>		
 <!-- .........................................................................................	 -->
 	<amp-accordion>
-		<section class="OurClnt cCard">
-			<h3 class="outlnNone">Description<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
+		<section class="OurClnt">
+			<h3 class="outlnNone cCard">Description<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
 			<div  class="paraExplnd cCard">		
 				<p>A standalone bungalow in the up-market Sector XYZ it has a large lush garden and green views.</p>
 
