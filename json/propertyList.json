@@ -3,7 +3,7 @@
     {
       "type": "1 Bhk",
       "price": "5900",
-      "overleyId": "overleyId-1",
+      "overleyId": "propOvrley1",
       "imgUrl": "http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg.jpg",
 	  "altTag": "perch apartment",
 	  "description": "enter a small property description here",
@@ -12,7 +12,7 @@
     {
       "type": "2 Bhk",
       "price": "7900",
-      "overleyId": "overleyId-2",
+      "overleyId": "propOvrley2",
       "imgUrl": "http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg.jpg",
 	  "altTag": "perch apartment",
 	  "description": "enter a small property description here",
@@ -21,7 +21,7 @@
     {
       "type": "3 Bhk",
       "price": "7900",
-      "overleyId": "overleyId-3",
+      "overleyId": "propOvrley3",
       "imgUrl": "http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg.jpg",
 	  "altTag": "perch apartment",
 	  "description": "enter a small property description here",

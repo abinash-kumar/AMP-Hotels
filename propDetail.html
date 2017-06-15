@@ -63,7 +63,7 @@
 
 
 			/* SOME COMMON CSS HERE */
-			.theme-color{color:#0fb4c8;}
+			.theme-color{color:#0fb4c8;} 	
 			footer{margin-top:10px;}
 			.smallFa{font-size:12px;}
 			.hdng{margin:0 15px;}
@@ -176,7 +176,7 @@
 	  layout="fixed-height"
 	  src="json/propertyList.json" class="m1">	  
 		 <template type="amp-mustache" id={{overleyId}}>
-			<a href="#">
+			<a href="#" on="tap:"{{overleyId}} role="button" tabindex="1">
 				<div class="propCardLst cCard">
 					<div class="w38 flexCentr">
 						<amp-img width="130"
@@ -496,6 +496,20 @@
 			</ul>
 		</div>
 	</amp-lightbox>
+<!-- ...............................................................................	 -->
+	
+	<amp-lightbox id="propOvrley1"
+	  layout="nodisplay">
+	  <span class="closeNav" on="tap:propOvrley1.close" role="button" tabindex="7" >X</span>
+		<div class="overleyLightBox flexCentr">
+			<ul>
+				<li class="facbok"><i class="fa fa-facebook"></i></li>
+				<li class="whatsap"><i class="fa fa-facebook "></i></li>
+				<li class="emil"><i class="fa fa-facebook "></i></li>
+				<li class="call"><i class="fa fa-facebook"></i></li>
+			</ul>
+		</div>
+	</amp-lightbox>	
 
   </body>
 </html>
