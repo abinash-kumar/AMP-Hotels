@@ -157,8 +157,8 @@
 	<amp-list width="auto"
 	  height="120"
 	  layout="fixed-height"
-	  src="json/propertyList.json">	  
-		 <template type="amp-mustache">
+	  src="json/propertyList.json" class="m1">	  
+		 <template type="amp-mustache" id="amp-template-id">
 			<a href="#">
 				<div class="propCardLst">
 					<div class="w38 flexCentr">
@@ -176,24 +176,6 @@
 				</div>
 			</a>
 		</template>	
-		 <template type="amp-mustache">
-			<a href="#">
-				<div class="propCardLst">
-					<div class="w38 flexCentr">
-						<amp-img width="130"
-						height="110"
-						src="{{imgUrl}}"
-						alt="{{altTag}}"></amp-img>
-					</div>
-					<div class="w42">
-						<p>{{type}}</p>						
-					</div>
-					<div class="w20 flexCentr">
-						<p class="price-other"><i class="fa fa-inr"></i>&nbsp;{{price}}</p>
-					</div>
-				</div>
-			</a>
-		</template>		
 	</amp-list>		
 	
 	
