@@ -175,7 +175,25 @@
 					</div>
 				</div>
 			</a>
-		</template>				
+		</template>	
+		 <template type="amp-mustache">
+			<a href="#">
+				<div class="propCardLst">
+					<div class="w38 flexCentr">
+						<amp-img width="130"
+						height="110"
+						src="{{imgUrl}}"
+						alt="{{altTag}}"></amp-img>
+					</div>
+					<div class="w42">
+						<p>{{type}}</p>						
+					</div>
+					<div class="w20 flexCentr">
+						<p class="price-other"><i class="fa fa-inr"></i>&nbsp;{{price}}</p>
+					</div>
+				</div>
+			</a>
+		</template>		
 	</amp-list>		
 	
 	
