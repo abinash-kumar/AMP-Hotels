@@ -293,7 +293,7 @@
 	  layout="fixed-height"
 	  src="json/similarPropList.json" class="m1">	  
 		 <template type="amp-mustache" id={{overleyId}}>
-			<a>
+			<a href="#">
 				<div class="propCardLst cCard">
 					<div class="w38 flexCentr">
 						<amp-img width="130"
@@ -302,9 +302,9 @@
 						alt="{{altTag}}"></amp-img>
 					</div>
 					<div class="w62">
-						<p>{{propName}}</p>						
-						<p>{{location}}</p>						
-						<p class="theme-color pull-right"><i class="fa fa-inr"></i>&nbsp;{{price}}</p>
+						<span>{{propName}}</span>						
+						<span>{{location}}</span>						
+						<span class="theme-color pull-right"><i class="fa fa-inr"></i>&nbsp;{{price}}</span>
 					</div>
 				</div>
 			</a>
