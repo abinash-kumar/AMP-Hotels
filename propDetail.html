@@ -55,6 +55,7 @@
 			.call{color:#309be3;background:#fff;}.call:hover{background:#309be3;color:#fff;}
 			.pShar{color: #0fb4c8;font-size: 2.8rem;}
 			.secHdng{color: #0fb4c8;font-size:2rem;margin:10px 15px;}
+			.propCardLst{display:flex;}
 			/* ends here */
 
 
@@ -157,15 +158,16 @@
 	  layout="fixed-height"
 	  src="json/propertyList.json">
 		 <template type="amp-mustache">
-			<a href="#"
-			  class="ampstart-card related m1">
-			  <amp-img width="122"
-				height="100"
-				src="{{imgUrl}}"
-				alt="{{altTag}}"></amp-img>
-			  <p>{{description}}</p>
-			  <p>{{detail}}</p>
-			  <p class="price-other">{{price}}</p>
+			<a href="#">
+				<div class="propCardLst">
+					<amp-img width="122"
+					height="100"
+					src="{{imgUrl}}"
+					alt="{{altTag}}"></amp-img>
+					<p>{{description}}</p>
+					<p>{{detail}}</p>
+					<p class="price-other">{{price}}</p>
+				</div>
 			</a>
 		</template>
 		<div overflow
