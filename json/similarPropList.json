@@ -14,26 +14,6 @@
       "propName": "Perch Service Apartment",
       "location": "Gugugram",
       "price": "5900",
-      "overleyId": "similer2",
-      "imgUrl": "http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg.jpg",
-	  "altTag": "perch apartment",
-	  "description": "enter a small property description here",
-	  "detail" : "any other property detail can be enter enter here"
-    },
-    {
-      "propName": "Perch Service Apartment",
-      "location": "Gugugram",
-      "price": "5900",
-      "overleyId": "similer3",
-      "imgUrl": "http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg.jpg",
-	  "altTag": "perch apartment",
-	  "description": "enter a small property description here",
-	  "detail" : "any other property detail can be enter enter here"
-    },
-    {
-      "propName": "Perch Service Apartment",
-      "location": "Gugugram",
-      "price": "5900",
       "overleyId": "similer4",
       "imgUrl": "http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg.jpg",
 	  "altTag": "perch apartment",
