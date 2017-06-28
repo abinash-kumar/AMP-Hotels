@@ -59,7 +59,7 @@
 	
 	
 	
-		.topHead{position:relative;height:550px;margin-bottom:10px;}
+		.topHead{position:fixed;height:100%;width:100%;top:0px;}
 		.bgColor{
 		background-image: -webkit-linear-gradient(-135deg, #226fe2 0%,#1774ff 34%,#003bc3 76%,#04246d 100%);
 		background-image: -moz-linear-gradient(-135deg, #226fe2 0%,#1774ff 34%,#003bc3 76%,#04246d 100%);
@@ -73,8 +73,13 @@
 		.textSlides > i{font-size:80px;}
 		.btmLnk{position:absolute;bottom:0px;width: 100%;height: 50px; font-size: 55px;} .btmLnk > a {color:#fff;}
 		.flex{display:flex;justify-content:center;align-items:center;}
+		.nexpage{    margin-top: 176%; background: #ffffff;position: absolute;left: 0px;right: 0px;}
 	</style>
-	<style amp-custom>       
+	<style amp-custom> 
+
+	amp-accordion>section>:first-child { background-color:transparent;border:0px;}
+
+	.OurClnt{margin:20px 0px;}
     .ampTabContainer {
         display: flex;
         flex-wrap: wrap;
@@ -194,94 +199,97 @@
 		<div class="btmLnk flex"><a href="#nextP"><i class="fa fa-angle-down" aria-hidden="true"></i></a></div>
 	</div>
 
-	<amp-accordion>
-		<section class="OurClnt">
-			<h3 class="outlnNone ampstart-btn activeBtn">All Property<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
-			<div class="navOption" id="nextP">
-				<amp-selector role="tablist"
-				  layout="container"
-				  class="ampTabContainer">
-				  <div role="tab"
-					class="tabButton"
-					selected
-					option="a">Tab one</div>
-				  <div role="tabpanel"
-					class="tabContent">
-						<ul>
-							<li><a>Perch Arbor Suites</a></li>
-							<li><a>Perch Arbor - Golf Course Road</a></li>
-						</ul>
-					</div>
-				  <div role="tab"
-					class="tabButton"
-					option="b">Tab two</div>
-				  <div role="tabpanel"
-					class="tabContent">
-						<ul>
-							<li><a href="https://abinash-kumar.github.io/perch-AMP/propertyList.html">Perch Service Apartment</a></li>
-							<li><a href="https://abinash-kumar.github.io/perch-AMP/propertyList.html">Perch Grove Apartments</a></li>
-							<li><a href="https://abinash-kumar.github.io/perch-AMP/propertyList.html">Perch Villa - DLF Cyber City</a></li>
-						</ul>
-					</div>
-				</amp-selector>
-			
-			</div>
-		</section>
-	</amp-accordion>
-	
+	<div class="nexpage">
+		<amp-accordion>
+			<section class="OurClnt">
+				<h3 class="outlnNone ampstart-btn activeBtn">All Property<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
+				<div class="navOption">
+					<amp-selector role="tablist"
+					  layout="container"
+					  class="ampTabContainer">
+					  <div role="tab"
+						class="tabButton"
+						selected
+						option="a">Tab one</div>
+					  <div role="tabpanel"
+						class="tabContent">
+							<ul>
+								<li><a>Perch Arbor Suites</a></li>
+								<li><a>Perch Arbor - Golf Course Road</a></li>
+							</ul>
+						</div>
+					  <div role="tab"
+						class="tabButton"
+						option="b">Tab two</div>
+					  <div role="tabpanel"
+						class="tabContent">
+							<ul>
+								<li><a href="https://abinash-kumar.github.io/perch-AMP/propertyList.html">Perch Service Apartment</a></li>
+								<li><a href="https://abinash-kumar.github.io/perch-AMP/propertyList.html">Perch Grove Apartments</a></li>
+								<li><a href="https://abinash-kumar.github.io/perch-AMP/propertyList.html">Perch Villa - DLF Cyber City</a></li>
+							</ul>
+						</div>
+					</amp-selector>
+				
+				</div>
+			</section>
+		</amp-accordion>
 
+		
+
+	  
+		<amp-carousel 
+		  width="400"
+		  height="300"
+		  layout="responsive"
+		  type="slides"
+		  delay="5000">						
+			<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-1.jpg"
+				width="400"
+				height="350"
+				layout="responsive"
+				alt="a sample image">
+			</amp-img>
+			
+			<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-2.jpg"
+				width="400"
+				height="350"
+				layout="responsive"
+				alt="a sample image">
+			</amp-img>
+			
+			<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg"
+				width="400"
+				height="350"
+				layout="responsive"
+				alt="a sample image">
+			</amp-img>
+			
+			<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-1.jpg.jpg"
+				width="400"
+				height="350"
+				layout="responsive"
+				alt="a sample image">
+			</amp-img>
+			
+			<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-2.jpg.jpg"
+				width="400"
+				height="350"
+				layout="responsive"
+				alt="a sample image">
+			</amp-img>
+			
+			<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg.jpg"
+				width="400"
+				height="350"
+				layout="responsive"
+				alt="a sample image">
+			</amp-img>
+		</amp-carousel>
+	  
+		<h1 id="nextP"> welome here</h1>
   
-  	<amp-carousel 
-	  width="400"
-	  height="300"
-	  layout="responsive"
-	  type="slides"
-	  delay="5000">						
-		<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-1.jpg"
-			width="400"
-			height="350"
-			layout="responsive"
-			alt="a sample image">
-		</amp-img>
-		
-		<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-2.jpg"
-			width="400"
-			height="350"
-			layout="responsive"
-			alt="a sample image">
-		</amp-img>
-		
-		<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg"
-			width="400"
-			height="350"
-			layout="responsive"
-			alt="a sample image">
-		</amp-img>
-		
-		<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-1.jpg.jpg"
-			width="400"
-			height="350"
-			layout="responsive"
-			alt="a sample image">
-		</amp-img>
-		
-		<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-2.jpg.jpg"
-			width="400"
-			height="350"
-			layout="responsive"
-			alt="a sample image">
-		</amp-img>
-		
-		<amp-img src="http://res.cloudinary.com/the-perch/image/upload/h_280,w_380,c_fill/homepage-slider/desktop-slider-3.jpg.jpg"
-			width="400"
-			height="350"
-			layout="responsive"
-			alt="a sample image">
-		</amp-img>
-	</amp-carousel>
-  
-  
-  
+	</div> 
   
   
   
