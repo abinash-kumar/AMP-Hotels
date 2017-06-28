@@ -5,12 +5,12 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <title>perch</title>
 	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#1c71f0">
+	<meta name="theme-color" content="#0db3c7">
 	<meta name="color" content="#ffffff">
 	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#1c71f0">
+	<meta name="msapplication-navbutton-color" content="#0db3c7">
 	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#1c71f0">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#0db3c7">
 	<link rel="canonical" href="https://abinash-kumar.github.io/perch-AMP/" /> 
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
@@ -38,20 +38,129 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 	
 	<style amp-custom>
-		.topHead{position:relative;height:550px;margin-bottom:50px;
+	
+	
+	
+		.outlnNone{outline:0}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		.topHead{position:relative;height:550px;margin-bottom:10px;}
+		.bgColor{
 		background-image: -webkit-linear-gradient(-135deg, #226fe2 0%,#1774ff 34%,#003bc3 76%,#04246d 100%);
 		background-image: -moz-linear-gradient(-135deg, #226fe2 0%,#1774ff 34%,#003bc3 76%,#04246d 100%);
 		background-image: -o-linear-gradient(-135deg, #226fe2 0%,#1774ff 34%,#003bc3 76%,#04246d 100%);
-		background-image: linear-gradient(-135deg, #226fe2 0%,#1774ff 34%,#003bc3 76%,#04246d 100%);}.navbar{padding:10px;position:absolute;top:0px;width:95%;justify-content:space-between;align-items:center;font-size:2rem;color:#ffffff;display:flex;}
+		background-image: linear-gradient(-135deg, #226fe2 0%,#1774ff 34%,#003bc3 76%,#04246d 100%);}
+		.navbar{padding:10px;position:absolute;top:0px;width:95%;justify-content:space-between;align-items:center;font-size:2rem;color:#ffffff;display:flex;}
 		.sliderElement{height:525px;position:absolute;top:0px;right:0px;bottom:0px;left:0px;width:100%;}
 		.conatsSlide, .textSlides{width:100%;height:300px;}
 		.conatsSlide{position:absolute;top:20%;right:0px;left:0px;}
 		.textSlides{font-size: 30px;text-align: center;color: #fff;}
 		.textSlides > i{font-size:80px;}
+		.btmLnk{position:absolute;bottom:0px;width: 100%;height: 50px; font-size: 55px;} .btmLnk > a {color:#fff;}
+		.flex{display:flex;justify-content:center;align-items:center;}
 	</style>
+	<style amp-custom>       
+    .ampTabContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .tabButton[selected] {
+        outline: none;
+        background: #000;
+		color:#fff;
+    }
+    
+    .tabButton {
+        list-style: none;
+        flex-grow: 1;
+        text-align: center;
+        cursor: pointer;
+		padding: 8px;
+    }
+    
+    .tabContent {
+        display: none;
+        width: 100%;
+        order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
+    }
+    
+    .tabButton[selected]+.tabContent {
+        display: block;
+    }
+	
+	amp-selector [option][selected] {
+		outline: 0px solid rgba(0,0,0,.7);
+	}
+
+    /* For example below (not required) */
+    .itemCustom {
+        border: 1px solid #000;
+        height: 280px;
+        width: 380px;
+        margin: 10px;
+        text-align: center;
+        
+    }
+    .navOption > amp-selector {
+      margin: 1rem;
+    }
+	
+	.ampstart-btn {
+	border: 1px solid #ffffff;
+	text-align: center;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    padding: .7em .8em;
+    text-decoration: none;
+    word-wrap: normal;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #832a0c;
+	color: #832a0c;
+    border: 1px solid #832a0c;
+	text-transform:uppercase;
+	}
+	h3[aria-expanded="true"] {
+		background-image: linear-gradient(90deg,#0c4fe8 0,#00398e);
+		color: #fff;
+	}
+	.tabContent ul{padding:0;text-align:center;}
+	.tabContent ul li {
+	margin:5px 0px;
+	list-style:none;
+	background:#ccc;
+	}
+	.tabContent ul li > a {
+		line-height: 2;
+		text-decoration:none;
+		cursor:pointer;
+		color:#000;
+	}
+	
+</style>
+	
   </head>
   <body>
-	<div class="topHead">
+	<div class="topHead bgColor">
 		<div class="conatsSlide">
 			<amp-carousel 
 			  width="300"
@@ -82,9 +191,45 @@
 				<span class="theme_color nav_btn clear"><i class="fa fa-bars"></i></span>
 			</div>
 		</nav>
-		
+		<div class="btmLnk flex"><a href="#nextP"><i class="fa fa-angle-down" aria-hidden="true"></i></a></div>
 	</div>
+
+	<amp-accordion>
+		<section class="OurClnt">
+			<h3 class="outlnNone ampstart-btn activeBtn">All Property<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
+			<div class="navOption" id="nextP">
+				<amp-selector role="tablist"
+				  layout="container"
+				  class="ampTabContainer">
+				  <div role="tab"
+					class="tabButton"
+					selected
+					option="a">Tab one</div>
+				  <div role="tabpanel"
+					class="tabContent">
+						<ul>
+							<li><a>Perch Arbor Suites</a></li>
+							<li><a>Perch Arbor - Golf Course Road</a></li>
+						</ul>
+					</div>
+				  <div role="tab"
+					class="tabButton"
+					option="b">Tab two</div>
+				  <div role="tabpanel"
+					class="tabContent">
+						<ul>
+							<li><a href="https://abinash-kumar.github.io/perch-AMP/propertyList.html">Perch Service Apartment</a></li>
+							<li><a href="https://abinash-kumar.github.io/perch-AMP/propertyList.html">Perch Grove Apartments</a></li>
+							<li><a href="https://abinash-kumar.github.io/perch-AMP/propertyList.html">Perch Villa - DLF Cyber City</a></li>
+						</ul>
+					</div>
+				</amp-selector>
+			
+			</div>
+		</section>
+	</amp-accordion>
 	
+
   
   	<amp-carousel 
 	  width="400"
