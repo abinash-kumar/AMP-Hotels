@@ -55,7 +55,8 @@
 		.gcard{background-color: #fff;box-shadow: 0 1px 2px rgba(0,0,0,0.2);border-radius: 2px;padding: 20px;margin: 0 8px 10px 8px;}
 		.gcardSpl{box-shadow: 0 1px 2px rgba(0,0,0,0.2);border-radius: 2px;padding: 20px; background: #607d8b;color: #fff;}
 		.specialpara{background: #607D8B;color: #fff;padding: 20px;}
-		footer{height:200px;box-shadow: 0px -3px 20px rgba(0, 0, 0, 0.40);margin-top:10px;}
+		.bgColor2{background-image: linear-gradient(90deg,#0c4fe8 0,#00398e);}
+
 	
 	
 	
@@ -402,14 +403,43 @@
 			</amp-carousel>	
 		</section>		
 		
-		<footer class="bgColor">
+		<footer>
+			<section class="bgColor footer">
+				<div class="f2Sec">d</div>
+				<div class="f2Sec f2SecCntainr">
+					<div class="f2Secinner">
+						<ul>
+							<li><a href="#">Franchise</a></li>
+							<li><a href="#">Policies</a></li>
+							<li><a href="#">Book Now</a></li>
+							<li><a href="#">Blog</a></li>
+
+						</ul>
+					</div>
+					<div class="f2Secinner bgColor2 f2Secinner2">					
+						<div class="nodalDiv">powred by<img class="pull-right" src="http://www.reputize.in/sitepanel/assets/pages/img/login/nodal-logo.jpg" width="100px" />
+						</div>
+					</div>				
+				</div>			
+			</section>
+			<small>Copyright © 2016 The hotels Service Apartments. All rights reserved.</small>
 		</footer>
 
 
 	</div>
   
   
-  
+  <style>
+  		.footer{box-shadow: 0px -3px 20px rgba(0, 0, 0, 0.40);margin-top:10px;display:flex;justify-content:center;height: 400px;text-align:center;}
+		.f2Sec{height:100%;width: 100%;}
+		.f2SecCntainr{display:flex;flex-wrap:wrap;}
+		.f2Secinner{width:100%;}
+		.nodalDiv{color:#fff;padding:10px;}
+		.f2Secinner > ul li{list-style:none;margin-top: 30px;}
+		.f2Secinner > ul li a{color:#fff;}
+		.f2Secinner2{height:70px;border-left:2px solid #ffffff;}
+		
+	</style>
   
   
 	
