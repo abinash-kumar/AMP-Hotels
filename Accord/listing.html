@@ -64,13 +64,26 @@
 		background-image: linear-gradient(-135deg, #226fe2 0%,#1774ff 34%,#003bc3 76%,#04246d 100%);}		.navbar{padding:10px;position:fixed;top:0px;width:95%;justify-content:space-between;align-items:center;font-size:2rem;color:#ffffff;display:flex;height:48px;z-index:10;}
 		.navbar>a{margin:0px;color:#fff;}
 		.Listpage{margin-top:68px;}
+		.opctyTrue{opacity:0;}.NavBtn{z-index:800;}
 		
 	
 
-	.circleBtn{position:fixed;top:23px;z-index:20;left:75%;}
+	.circleBtn{position:fixed;top:23px;z-index:20;left:68%;}
 	.circleDot{color:#fff;font-size:25px;}
-	.paraExp{margin-top: 19px;width: 403px;height: 50px;margin-left: -70%;display:flex;}
+	.paraExp{margin-top: 11px;width: 403px;height: 50px;margin-left: -70%;display:flex;}
 	.subNav{justify-content: space-around;width: 100%;height: 50px;display: flex; align-items: center;}.sub{width:50%;display: flex;justify-content:center;}.sub a{color:#fff}.textOnImg{height:105px;width:100%;justify-content:center;align-items:center;font-size:4rem;color:#fff;-webkit-clip-path:polygon(100% 100%,100% 0,-400% 0);clip-path:polygon(100% 100%,100% 0,-400% 0)}.smallFa{font-size:12px}h1{padding:10px;font-size:2.5rem;color:#000}
+	.blink_me {animation: blinker 5s linear ;}
+	@keyframes blinker {
+	0% { opacity: 0; }	
+	20% { opacity: 1; }	
+	30% { opacity: 0; }	
+	40% { opacity: 0.5; }	
+	50% { opacity: 1; }	
+	60% { opacity: 0; }	
+	70% { opacity: 0.5; }	
+	80% { opacity: 1; }	
+	90% { opacity: 0.5; }		
+	}
 	
 	
 	
@@ -170,13 +183,16 @@
   <body>	
 		<nav class="bgColor navbar">
 			<a href="href=""><amp-img src="img/accordLogo.PNG"  width="200" height="60" ></amp-img></a>			
-			<a href="#" class=""  tabindex="3"   on="tap:sidebar.toggle" role="button"><span class="font30px outlnNone" on="tap:sidebar.toggle" role="button"><i class="fa fa-bars"></i></span></a>
+			<a href="#" class="outlnNone NavBtn"  tabindex="3"   on="tap:sidebar.toggle" role="button"><span class="font30px" on="tap:sidebar.toggle" role="button"><i class="fa fa-bars"></i></span></a>
 		</nav>
 		
 		<div class="circleBtn">
 			<amp-accordion>
 				<section>
-					<i class="fa fa-circle circleDot" aria-hidden="true"></i>
+					<div class="flex outlnNone">						
+						<i class="fa fa-hand-o-right circleDot opctyTrue blink_me" aria-hidden="true"></i>
+						<i class="fa fa-circle circleDot" aria-hidden="true"></i>
+					</div>
 					<div  class="paraExp flex bgColor">		
 						<div class="subNav">
 							<div class="sub">
