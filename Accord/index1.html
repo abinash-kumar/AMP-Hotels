@@ -1,0 +1,590 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>perch</title>
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#1c72f3">
+	<meta name="color" content="#ffffff">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#1c72f3">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#1c72f3">
+	<link rel="canonical" href="https://abinash-kumar.github.io/perch-AMP/" /> 
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+	<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+	<!-- <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script> -->
+	<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+	<!-- <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script> -->
+	<script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+	<script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+	<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	
+	<style amp-custom>
+		.OurClnt{color:#4a4a4a;}
+		.padding10{padding:10px;}
+		.outlnNone{outline:none;}
+		html{}
+		body {		
+		color: #4a4a4a;
+		line-height:1.3;
+		font-family: 'Josefin Sans', sans-serif;
+		background: white;
+		font-smooth: always;
+		text-size-adjust: 100%;
+		-webkit-font-smoothing: antialiased;
+		}
+		a {text-decoration:none;}
+		.gcard{background-color: #fff;box-shadow: 0 1px 2px rgba(0,0,0,0.2);border-radius: 2px;padding: 20px;margin: 0 8px 10px 8px;}
+		.gcardSpl{box-shadow: 0 1px 2px rgba(0,0,0,0.2);border-radius: 2px;padding: 20px; background: #607d8b;color: #fff;}
+		.specialpara{background: #607D8B;color: #fff;padding: 20px;text-align:justify;}
+		.bgColor2{background-image: linear-gradient(90deg,#0c4fe8 0,#00398e);}
+		.bgColor3{background-image: linear-gradient(90deg,#0c4fe8 0,#195abd);}		.navbar{padding:10px;position:absolute;top:0px;width:95%;justify-content:space-between;align-items:center;font-size:2rem;color:#ffffff;display:flex;}.bgColor{
+		background-image: -webkit-linear-gradient(-135deg, #226fe2 0%,#1774ff 34%,#003bc3 76%,#04246d 100%);
+		background-image: -moz-linear-gradient(-135deg, #226fe2 0%,#1774ff 34%,#003bc3 76%,#04246d 100%);
+		background-image: -o-linear-gradient(-135deg, #226fe2 0%,#1774ff 34%,#003bc3 76%,#04246d 100%);
+		background-image: linear-gradient(-135deg, #226fe2 0%,#1774ff 34%,#003bc3 76%,#04246d 100%);}
+
+	
+	
+	
+
+	
+	
+	
+		.paragrf{text-align:justify;}
+		.marginTp20{box-shadow:none;}
+		.gcard2{background-color: #fff;box-shadow: 0 -1px 85px rgba(0, 0, 0, 0.13); padding: 20px 0px;margin: 0px 10px;}
+		.paraExplnd{text-align:center;padding:15px;}
+		.specialHead{background: #607D8B;color: #fff;margin: 15% 0%;}
+		.pading[aria-expanded="true"]{padding:10px;}	
+		.h1Ding{font-size: 25px;}
+		.mrgnTop30 {margin: 10px 10px ! important;}
+		.topHead{position:fixed;height:100%;width:100%;top:0px;}
+		
+		
+		.sliderElement{height:525px;position:absolute;top:0px;right:0px;bottom:0px;left:0px;width:100%;}
+		.conatsSlide, .textSlides{width:100%;height:300px;}
+		.conatsSlide{position:absolute;top:20%;right:0px;left:0px;text-align: center;}
+		.textSlides>a{font-size: 30px;color: #fff;}
+		.textSlides>a>i{font-size:80px;}
+		.btmLnk{position: absolute;bottom: 0px;width: 100%;height: 125px;font-size: 20px;text-align: center;} .btmLnk>a{color:#fff;}.btmLnk>a>i{font-size: 36px;}
+		.flex{display:flex;justify-content:center;align-items:center;}
+		.nexpage{margin-top: 176%; background: #f2f2f2;position: absolute;left: 0px;right: 0px;}
+	</style>
+	<style amp-custom> 
+
+	amp-accordion>section>:first-child { background-color:transparent;border:0px;}
+
+	
+    .ampTabContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .tabButton[selected] {
+        outline: none;
+        background: #000;
+		color:#fff;
+    }
+    
+    .tabButton {
+        list-style: none;
+        flex-grow: 1;
+        text-align: center;
+        cursor: pointer;
+		padding: 8px;
+    }
+    
+    .tabContent {
+        display: none;
+        width: 100%;
+        order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
+    }
+    
+    .tabButton[selected]+.tabContent {
+        display: block;
+    }
+	
+	amp-selector [option][selected] {
+		outline: 0px solid rgba(0,0,0,.7);
+	}
+
+    /* For example below (not required) */
+    .itemCustom {
+        border: 1px solid #000;
+        height: 280px;
+        width: 380px;
+        margin: 10px;
+        text-align: center;
+        
+    }
+    .navOption > amp-selector {
+      margin: 1rem;
+    }
+	
+	.ampstart-btn {
+	border: 1px solid #ffffff;
+	text-align: center;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    padding: 1.7em .8em;
+    text-decoration: none;
+    word-wrap: normal;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #832a0c;
+	color: #832a0c;
+    border: 1px solid #832a0c;
+	text-transform:uppercase;
+	}
+	h3[aria-expanded="true"] {
+		background-image: linear-gradient(90deg,#0c4fe8 0,#00398e);
+		color: #fff;
+	}
+	.tabContent ul{padding:0;text-align:center;}
+	.tabContent ul li {
+	margin:5px 0px;
+	list-style:none;
+	}
+	.tabContent ul li > a {
+		line-height: 2;
+		text-decoration:none;
+		cursor:pointer;
+		color:#000;
+	}
+	
+</style>
+	
+  </head>
+  <body>
+	<div class="topHead bgColor">
+		<div class="conatsSlide">
+			<amp-carousel 
+			  width="300"
+			  height="400"
+			  layout="responsive"
+			  type="slides"
+			  autoplay
+			  delay="5000">
+				<div class="textSlides">
+					<a href="tel:+91-880-046-1053">	<i class="fa fa-hotel"></i>
+						<h2>Book Now</h2>
+					</a>
+				</div>
+				<div class="textSlides">
+					<a href="tel:+91-880-046-1053">
+						<i class="fa fa-phone"></i>
+						<h2>Call Us</h2>
+					</a>
+				</div>
+				<div class="textSlides">
+					<a href="mailto:Example@domain.com">
+						<i class="fa fa-envelope"></i>
+						<h2>Contact Us</h2>
+					</a>
+				</div>
+			</amp-carousel>
+		</div>
+	
+		<nav class="navbar">
+			<a href="#"><amp-img src="img/accordLogo.PNG"  width="200" height="60" ></amp-img></a>
+			<div class="ffrc float_right font30px text_upper mrgn_top nav_btn  clear " tabindex="3"   on="tap:sidebar.toggle"
+			class="ampstart-btn caps m2" role="button"> 
+				<span class="theme_color nav_btn clear outlnNone" on="tap:sidebar.toggle" role="button"><i class="fa fa-bars"></i></span>
+			</div>
+		</nav>
+		<div class="btmLnk flex"><a href="#nextP"><p><small>Tap / Scroll</small></p><i class="fa fa-angle-down" aria-hidden="true"></i></a></div>
+	</div>
+
+	<div class="nexpage" id="nextP">
+		<amp-accordion>
+			<section class="OurClnt">
+				<h3 class="outlnNone ampstart-btn activeBtn">Pullman Special<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
+				<div class="navOption">
+					<amp-selector role="tablist"
+					  layout="container"
+					  class="ampTabContainer">
+					  <div role="tab"
+						class="tabButton"
+						selected
+						option="a">Restaurants & Bars</div>
+					  <div role="tabpanel"
+						class="tabContent">
+							<ul>
+								<li><a href="#">Restaurants Example Link 1</a></li>
+								<li><a href="#">Restaurants Example Link 1</a></li>
+							</ul>
+						</div>
+					  <div role="tab"
+						class="tabButton"
+						option="b">Meetings & Events</div>
+					  <div role="tabpanel"
+						class="tabContent">
+							<ul>
+								<li><a href="#">Meetings Example Link 1</a></li>
+								<li><a href="#">Meetings Example Link 2</a></li>
+								<li><a href="#">Meetings Example Link 3</a></li>
+							</ul>
+						</div>
+					</amp-selector>
+				
+				</div>
+			</section>
+		</amp-accordion>
+
+		
+
+	  
+		<amp-carousel 
+		  width="400"
+		  height="300"
+		  layout="responsive"
+		  type="slides"
+		  delay="5000">						
+			
+			<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2016/02/22091540/1373721_1500_1125.jpg"
+				width="400"
+				height="350"
+				layout="responsive"
+				alt="a sample image">
+			</amp-img>
+			
+			<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2016/02/22091540/pullman-premeir-PFA-low-res.jpg"
+				width="400"
+				height="350"
+				layout="responsive"
+				alt="a sample image">
+			</amp-img>
+			
+			<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2016/02/22091540/pullman-premeir-lounge-low-res.jpg"
+				width="400"
+				height="350"
+				layout="responsive"
+				alt="a sample image">
+			</amp-img>			
+			<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2016/02/22091540/sit-down-dinner-low-res.jpg"
+				width="400"
+				height="350"
+				layout="responsive"
+				alt="a sample image">
+			</amp-img>
+			
+			<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2016/02/22091540/pluck-opt1-low-res.jpg"
+				width="400"
+				height="450"
+				layout="responsive"
+				alt="a sample image">
+			</amp-img>
+			
+			<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2016/02/22091540/pullman-hospitallty-lounge-low-res.jpg"
+				width="400"
+				height="350"
+				layout="responsive"
+				alt="a sample image">
+			</amp-img>
+			
+		</amp-carousel>
+
+		<h1 class="h1Ding mrgnTop30"> Pullman and Novotel New Delhi Aerocity offers :-</h1>
+		<div class="gcard">
+			<h3>Deluxe room -</h3>
+			<p class="paragrf">Perfectly equipped for the global nomad, they offer 5-star comforts and all modern conveniences. Soundproofing keeps the nearby airport at bay. Over-sized square pillows and leg support pillows guarantee maximum comfort. And a massage at the Woo Wellness & Spa will erase jet lag in no time.</p>
+			<a href="#" class="pull-right">more..</a>
+		</div>
+
+		<div class="gcard">
+			<h3>Executive Room -</h3>
+			<p class="paragrf">Generously equipped for global travellers, Pullman Executive rooms (available as King or Twin) are designed to make life easy. Let hunger, not times zones, dictate when you eat – room service is available at any time of day. Revitalise after a day of meetings or sightseeing in the large walk-in rain shower. Or relax in the bathtub to your favourite tunes thanks to the Bose docking station.</p>
+			<a href="#" class="pull-right">more..</a>
+		</div>
+
+		<div class="gcard">
+			<h3>Presidental Suite -</h3>
+			<p class="paragrf">Pullman has designed the Presidential suite for those seeking an exclusive abode. This vastly spacious suite features exquisite design and a host of 5-star amenities. Personal lounges – to relax in private. Well-equipped kitchenettes – for autonomy. Ultra-generous bathrooms – for luxuriating in style. With a wide work desk, exclusively designed Pullman bed and the best view in the hotel, the Presidential suite is the ultimate place to work or unwind.</p>
+			<a href="#" class="pull-right">more..</a>
+		</div>			
+		<amp-accordion>
+			<section class="OurClnt gcard2 marginTp20">
+				<h3 class="outlnNone pading">Online Reviews<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
+				<div  class="paraExplnd ">		
+					<p>Pullman has over 1500 genuine reviews on Tripadvisor, Booking.com, Google & Airbnb</p>
+				</div>
+			</section>
+		  
+			<section class="OurClnt gcard2">
+				<h3 class="outlnNone pading">Locations<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
+				<div  class="paraExplnd ">
+					<p>Hotel Pullman New Delhi Aerocity
+						Asset No 02 GMR Hospitality District IGI Airport New Delhi, 110037 NEW DELHI
+						INDIA
+						Tel: (+91)1146080808
+						Fax: (+91)1146080809</p>
+				</div>		
+			</section>
+			
+			<section class="OurClnt gcard2">
+				<h3 class="outlnNone pading">Fully Serviced<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>		
+				<div  class="paraExplnd ">
+					<p>24/7 Front Desk, Daily Housekeeping, Concierge, Gym, In-House Cab Service, Laundry</p>
+				</div>		
+			</section>
+			
+			<section class="OurClnt gcard2">
+				<h3 class="outlnNone pading ">Great Amenities<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
+				<div class="paraExplnd ">
+					<p>Greenery, In-Apartment Kitchens, Room Service, Complimentary Breakfast &  Gym</p>
+				</div>		
+			</section>		
+		</amp-accordion>		
+		<amp-accordion>
+				<section class="OurClnt specialHead">
+					<h3 class="outlnNone gcardSpl">Hotel PULLMAN New Delhi Areocity<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
+					<div  class="specialpara">		
+						<p>Located just a 7-minute drive from Delhi International Airport, Pullman and Novotel New Delhi Aerocity offers 670 rooms a complex hotel and an outdoor heated swimming pool. It is a 10-minute drive away from Cybercity and business hubs of Gurgaon and New Delhi. The Delhi Aerocity Metro Station is 400 m away while the Worldmark is 200 m. It has 6 dining options and free WiFi throughout the property.</p>
+
+						<p>The air-conditioned rooms feature Bose sound link II, flat-screen satellite TV and Espresso Coffee Machines. It also has a minibar and tea/coffee maker. The private four-fixture bathroom comes with shower.</p>
+
+						<p>
+						Dining options include Pluck, a modern day eatery with an in-house farm. It has a unique Tea Deli concept that showcases a selection of Indian and International teas. Honk serves Pan Asian delicacies while Pling is a lounge bar. Refreshing beverages can be enjoyed at the all-day Café Pluck. Food Exchange is a multi-cuisine restaurant and Quoin, a modern bar that offers exquisite wines and cocktails.</p>
+					</div>
+				</section>
+		</amp-accordion>		
+		
+		<div class="padding10">
+			<h1 class="h1Ding mrgnTop30">We strive for Excellence</h1>
+			<div class="mrgnTop30"><small>Families, Tourists, Corporate Travelers, Expats- Accommodation specially designed for different needs.</small></div>
+		</div>
+
+		<section class="mrgnTop30">
+			<amp-carousel 
+			width="400"
+			height="480"
+			layout="responsive"
+			layout="fixed-height"
+			autoplay
+			delay="5000"
+			  type="slides">
+				<div class="">
+						<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2017/05/15141059/sundower-Image-2-340x340.jpg" width="400" height="350" layout="responsive"></amp-img>
+					<div class="">
+						<p><b>Sundowner By Pullman</b></p>
+					   <small> <p>This summer, Pullman New Delhi Aerocity brings Sunday Sundowner for all you water babies. Enjoy music, dancing, unlimitless* drinking till 8:00 p.m.</p></small>
+					</div>
+				</div>
+				<div class="slides">
+					<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2017/06/09144102/Rouge-Blanc-Image-340x340.jpg"  width="400" height="350" layout="responsive"></amp-img>
+					<div class="">
+						<p><b>Signature Wine Labels by...</b></p>
+					   <small><p>The onset of the summer is marked by a refreshing introduction of two noteworthy entrants to the wine lists of the capital.</p></small>
+					</div>
+				</div>		
+				<div class="slides">
+					<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2016/08/16061035/Final-Executive-Lunch-Set-Menu-340x340.jpg"  width="400" height="350" layout="responsive"></amp-img>
+					<div class="">
+						<p><b>EXECUTIVE LUNCH</b></p>
+						<small><p>Pluck, Our Modern day eatery Restaurant with an in-house farm offers The Executive Lunch Menu. The menu comes in a choice of two, three or four courses.</p></small>
+					</div>
+				</div>
+			</amp-carousel>	
+		</section>		
+
+		<footer>
+			<section class="bgColor footer">
+				<div class="f2Sec topLftFtr">
+					<p class="topLftFtrCntnr"><i class="fa fa-phone callFotr"></i>&nbsp;&nbsp; +91-1146080808</p>
+					<ul class="shreFtr">
+						<li><a href="#"><i class="fa fa-facebook facebookFtr"></i><sub>Facebook</sub></a></li>
+						<li><a href="#"><i class="fa fa-rss rssFtr"></i>Blog</a></li>
+						<li><a href="#"><i class="fa fa-linkedin linkedinFtr"></i>Linked In</a></li>
+						<li><a href="#"><i class="fa fa-google-plus googleFtr"></i>Google+</a></li>
+					</ul>
+				</div>
+				<div class="f2Sec f2SecCntainr">
+					<div class="f2Secinner">
+						<ul class="ftrRightTp">
+							<li><a href="#">Sitemap</a></li>
+							<li><a href="#">Legal informations</a></li>
+							<li><a href="#">Book Now</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					<div class="f2Secinner bgColor2 f2Secinner2">					
+						<div class="nodalDiv">powred by<amp-img class="pull-right" src="http://www.reputize.in/sitepanel/assets/pages/img/login/nodal-logo.jpg" width="100" height="25" ></amp-img>
+						</div>
+					</div>				
+				</div>			
+			</section>
+			<center class="BtmTxtFtr"><small>Copyright © 2017 Pullman All rights reserved.</small></center>
+		</footer>
+	</div>
+  
+  <!-- navigation bar code here  -->
+  
+<amp-sidebar id="sidebar"
+	  layout="nodisplay"
+	  side="left">
+	<amp-img class="amp-close-image"		
+		width="20"
+		height="20"
+		alt="close sidebar"
+		on="tap:sidebar.close"
+		role="button"
+		tabindex="0"></amp-img>
+		
+		<nav class="navbar bgColor3">
+			<a href="href="tel:+91-000-000-0000"><amp-img src="img/accordLogo.PNG"  width="200" height="60" ></amp-img></a>
+		</nav>	
+		
+		
+		<ul class="navList">
+			<li>
+				<amp-accordion>
+					<section class="navLsit">
+						<h3 class="outlnNone">THE HOTEL</h3>
+						<span></span>						
+					</section>
+				</amp-accordion>
+			</li>
+			<li>
+				<amp-accordion>
+					<section class="navLsit">
+						<h3 class="outlnNone">Rooms & Suites</h3>					
+							<ul class="sidSubNav">
+								<li>
+									<a href="#">Delux Room</a>
+								</li>
+								<li>
+									<a href="#">Executive Room</a>
+								</li>
+								<li>
+									<a href="#">Executive Suite</a>
+								</li>
+							</ul>
+					</section>
+				</amp-accordion>	
+			</li>
+			<li>
+				<amp-accordion>
+					<section class="navLsit">
+						<h3 class="outlnNone">Restaurants & Bars</h3>					
+							<ul class="sidSubNav">
+								<li>
+									<a href="#">Honk</a>
+								</li>
+								<li>
+									<a href="#">Pluck</a>
+								</li>
+								<li>
+									<a href="#">Pling</a>
+								</li>
+							</ul>
+					</section>
+				</amp-accordion>
+			</li>
+			<li>
+				<amp-accordion>
+					<section class="navLsit">
+						<h3 class="outlnNone">Meetings & Events</h3>					
+							<ul class="sidSubNav">
+								<li>
+									<a href="#">Wedding</a>
+								</li>
+								<li>
+									<a href="#">Peacock ballroom</a>
+								</li>
+								<li>
+									<a href="#">Co-Meeting</a>
+								</li>
+							</ul>
+					</section>
+				</amp-accordion>
+			</li>
+			<li>	
+				<amp-accordion>
+					<section class="navLsit">
+						<h3 class="outlnNone">Special offers</h3>					
+						<span></span>
+					</section>
+				</amp-accordion>
+			</li>
+			<li> 
+				<amp-accordion>
+					<section class="navLsit">
+						<h3 class="outlnNone">About</h3><span></span>
+					</section>
+				</amp-accordion>	
+			</li>
+		</ul>
+		<hr class="marginTop40">
+		<div class="navBtmDiv">
+		  <a href="#"><p>Privacy Policy</p></a>
+		  <a href="#"><p>Terms of Service</p></a>
+		</div>
+</amp-sidebar>
+<style>
+	.sidSubNav li{list-style: none;}
+	.sidSubNav li > a{color:#607d8b;list-style:none;}
+	amp-sidebar {background:#fff;}
+	.navList{margin-top: 130px;width: 260px;}
+	.navList li {margin-top:20px;}
+	.marginTop40{margin-top: 60px;background: #fff;border-style: none;border: 1px solid #ececec;}
+	.navBtmDiv{padding-left:20px;}
+	.navBtmDiv > a {color:#ccc;}
+	.navLsit > h3{color:#898989;font-weight: 100;}
+	.navLsit > h3[aria-expanded="true"] {color:#fff;padding-top:5px;padding-bottom:5px;}
+</style>
+<!-- navbar ends here -->
+  
+  <style>
+		h3[role="heading"]{padding-left:30px;}
+		.navList > li > a {color:#4a4a4a;}
+  		.footer{box-shadow: 0px -3px 20px rgba(0, 0, 0, 0.40);margin-top:10px;display:flex;justify-content:center;height: 375px;text-align:center;color:#fff;}
+		.f2Sec{width: 100%;}
+		.f2SecCntainr{display:flex;flex-wrap:wrap;}
+		.f2Secinner{width:100%;}
+		.nodalDiv{color:#fff;padding:10px;text-align:left;}
+		.f2Secinner > ul li{list-style:none;margin-top: 30px;}
+		.f2Secinner > ul li a{color:#fff;}
+		.f2Secinner2{height:70px;border-left:2px solid #ffffff;}
+		.callFotr{font-size: 20px;padding: 5px 7px; border-radius: 66px;color: #fff;background: #1062ec;}
+		.topLftFtr{padding:20px;}
+		.shreFtr{margin-top: 45px;padding-left:20px;}
+		.shreFtr li{text-align:left;list-style:none;margin-top:18px;}
+		.shreFtr li>a>i{background: #fff;border-radius: 50%;margin-right:10px;color: #1062ec;font-size:20px;}
+		.facebookFtr{color:#3b5998;padding: 7px 14px;font-size:30px;}
+		.rssFtr{color:#37b437;padding: 7px 11px;font-size:30px;}
+		.linkedinFtr{color:#1c86bc;padding: 7px 10px;font-size:30px;}
+		.googleFtr{color: #d95232;padding: 7px 5px;font-size: 20px;}
+		.BtmTxtFtr{background: #000;color: #fff;}
+		.shreFtr li>a{color:#fff;}
+		.topLftFtrCntnr{background: #fff;border-radius: 20px;color: #070014;padding: 3px;}
+		.ftrRightTp{padding:0px;}
+
+		
+	</style>
+  
+  
+	
+  </body>
+</html>
