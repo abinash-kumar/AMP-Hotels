@@ -38,7 +38,7 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 	
 	<style amp-custom>
-	
+		.h1Ding {font-size: 25px;color: #4a4a4a;padding: 10px;}
 		.OurClnt{color:#4a4a4a;background:#fff;}
 		.padding10{padding:10px;}
 		.outlnNone{outline:none;}
@@ -47,13 +47,12 @@
 		color: #4a4a4a;
 		line-height:1.3;
 		font-family: 'Josefin Sans', sans-serif;
-		background: white;
 		font-smooth: always;
 		text-size-adjust: 100%;
 		-webkit-font-smoothing: antialiased;
 		}
 		a {text-decoration:none;}
-		.gcard{background-color: #fff;box-shadow: 0 1px 2px rgba(0,0,0,0.2);border-radius: 2px;padding: 20px;margin: 0 8px 10px 8px;}
+		.gcard{background-color: #fff;box-shadow: 0 1px 2px rgba(0,0,0,0.2);border-radius: 2px;padding: 10px;margin: 0 8px 10px 8px;}
 		.gcardSpl{box-shadow: 0 1px 2px rgba(0,0,0,0.2);border-radius: 2px;padding: 20px; background: #607d8b;color: #fff;}
 		.specialpara{background: #607D8B;color: #fff;padding: 20px;text-align:justify;}
 		.bgColor2{background-image: linear-gradient(90deg,#0c4fe8 0,#00398e);}
@@ -71,7 +70,8 @@
 	.circleBtn{position:fixed;top:23px;z-index:20;left:68%;}
 	.circleDot{color:#fff;font-size:25px;}
 	.paraExp{margin-top: 11px;width: 403px;height: 50px;margin-left: -70%;display:flex;}
-	.subNav{justify-content: space-around;width: 100%;height: 50px;display: flex; align-items: center;}.sub{width:50%;display: flex;justify-content:center;}.sub a{color:#fff}.textOnImg{height:105px;width:100%;justify-content:center;align-items:center;font-size:4rem;color:#fff;-webkit-clip-path:polygon(100% 100%,100% 0,-400% 0);clip-path:polygon(100% 100%,100% 0,-400% 0)}.smallFa{font-size:12px}h1{padding:10px;font-size:2.5rem;color:#000}
+	.subNav{justify-content: space-around;width: 100%;height: 50px;display: flex; align-items: center;}.sub{width:50%;display: flex;justify-content:center;}.sub a{color:#fff}.textOnImg{height:105px;width:100%;justify-content:center;align-items:center;font-size:4rem;color:#fff;-webkit-clip-path:polygon(100% 100%,100% 0,-400% 0);clip-path:polygon(100% 100%,100% 0,-400% 0)}.smallFa{font-size:12px}
+
 	.blink_me {animation: blinker 5s linear ;}
 	@keyframes blinker {
 	0% { opacity: 0; }	
@@ -85,7 +85,53 @@
 	90% { opacity: 0.5; }		
 	}
 	
-	
+	.priceBtn {
+    display: flex;
+    overflow: hidden;
+    width: 135px;
+    color: #656565;
+    margin-top: 5px;
+	background:#fff;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+	.propList {
+    margin: 15px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+}
+.mT10 {
+    margin-top: 15px;
+}
+.propList>a{color:#000;}
+	.flexCentr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    height: 30px;
+    width: 80px;
+    color: #fff;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    margin-left: -6px;
+}
+
+.m15 {
+    margin: 0 15px;
+}
+.m10{margin:10px;}
+
+.price span {
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+}
+
+.listBdy{background:#f2f2f2;margin-top: 68px;}
+
 	
 
 	</style>
@@ -209,197 +255,42 @@
 			</amp-accordion>
 		</div>
 		
-	<div class="Listpage" id="nextP">
-		<amp-accordion>
-			<section class="OurClnt">
-				<h3 class="outlnNone ampstart-btn activeBtn">Pullman Special<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
-				<div class="navOption">
-					<amp-selector role="tablist"
-					  layout="container"
-					  class="ampTabContainer">
-					  <div role="tab"
-						class="tabButton"
-						selected
-						option="a">Restaurants & Bars</div>
-					  <div role="tabpanel"
-						class="tabContent">
-							<ul>
-								<li><a href="#">Restaurants Example Link 1</a></li>
-								<li><a href="#">Restaurants Example Link 1</a></li>
-							</ul>
+		<div class="listBdy clear">
+				<!-- BODY OF THE LISTING PAGE REST IS COMMON ON BOTH OPAGE BUT NOT EXACTLY SAME -->
+			<h1 class="h1Ding mrgnTop30">Near your chosen destination</h1>
+			<div class="propList gcard">
+				<a href="" >
+					<div>
+						<amp-img src="https://www.ahstatic.com/photos/7559_ho_00_p_346x260.jpg" width="345" height="200" layout="responsive"></amp-img>
+						<div class="m10">
+						<span><strong>Pullman New Delhi Aerocity</strong></span>
+							<div><small>15.05 km from city centre, India</small></div>
+							<span><sub>2BHK / 3 BHK Apartments</sub></span>
+						</div>			
+							<div class="priceBtn pull-right">
+								<div class="price bgColor flexCentr"><span><i class="fa fa-inr"></i>88000<span></div><div class="flexCentr m15"><span>visit<span></div>
+							</div>				
+					</div>
+				</a>
+			</div>
+			<div class="propList gcard">
+				<a href="https://abinash-kumar.github.io/perch-AMP/propDetail.html" >
+					<div>
+						<amp-img src="https://www.ahstatic.com/photos/7560_ho_00_p_346x260.jpg" width="345" height="200" layout="responsive"></amp-img>
+						<div class="m10">
+							<span><strong>Novotel New Delhi Aerocity</strong></span>
+							<div><small>15.13 km from city centre, India</small></div>
+							<span><sub>2BHK / 3 BHK Apartments</sub></span>
 						</div>
-					  <div role="tab"
-						class="tabButton"
-						option="b">Meetings & Events</div>
-					  <div role="tabpanel"
-						class="tabContent">
-							<ul>
-								<li><a href="#">Meetings Example Link 1</a></li>
-								<li><a href="#">Meetings Example Link 2</a></li>
-								<li><a href="#">Meetings Example Link 3</a></li>
-							</ul>
+						<div class="priceBtn pull-right">
+							<div class="price bgColor flexCentr"><span><i class="fa fa-inr"></i>65000<span></div><div class="flexCentr m15"><span>visit<span></div>
 						</div>
-					</amp-selector>
-				
-				</div>
-			</section>
-		</amp-accordion>
-
+					</div>
+				</a>
+			</div>
+		</div>
 		
 
-	  
-		<amp-carousel 
-		  width="400"
-		  height="300"
-		  layout="responsive"
-		  type="slides"
-		  delay="5000">						
-			
-			<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2016/02/22091540/1373721_1500_1125.jpg"
-				width="400"
-				height="350"
-				layout="responsive"
-				alt="a sample image">
-			</amp-img>
-			
-			<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2016/02/22091540/pullman-premeir-PFA-low-res.jpg"
-				width="400"
-				height="350"
-				layout="responsive"
-				alt="a sample image">
-			</amp-img>
-			
-			<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2016/02/22091540/pullman-premeir-lounge-low-res.jpg"
-				width="400"
-				height="350"
-				layout="responsive"
-				alt="a sample image">
-			</amp-img>			
-			<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2016/02/22091540/sit-down-dinner-low-res.jpg"
-				width="400"
-				height="350"
-				layout="responsive"
-				alt="a sample image">
-			</amp-img>
-			
-			<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2016/02/22091540/pluck-opt1-low-res.jpg"
-				width="400"
-				height="450"
-				layout="responsive"
-				alt="a sample image">
-			</amp-img>
-			
-			<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2016/02/22091540/pullman-hospitallty-lounge-low-res.jpg"
-				width="400"
-				height="350"
-				layout="responsive"
-				alt="a sample image">
-			</amp-img>
-			
-		</amp-carousel>
-
-		<h1 class="h1Ding mrgnTop30"> Pullman and Novotel New Delhi Aerocity offers :-</h1>
-		<div class="gcard">
-			<h3>Deluxe room -</h3>
-			<p class="paragrf">Perfectly equipped for the global nomad, they offer 5-star comforts and all modern conveniences. Soundproofing keeps the nearby airport at bay. Over-sized square pillows and leg support pillows guarantee maximum comfort. And a massage at the Woo Wellness & Spa will erase jet lag in no time.</p>
-			<a href="#" class="pull-right">more..</a>
-		</div>
-
-		<div class="gcard">
-			<h3>Executive Room -</h3>
-			<p class="paragrf">Generously equipped for global travellers, Pullman Executive rooms (available as King or Twin) are designed to make life easy. Let hunger, not times zones, dictate when you eat – room service is available at any time of day. Revitalise after a day of meetings or sightseeing in the large walk-in rain shower. Or relax in the bathtub to your favourite tunes thanks to the Bose docking station.</p>
-			<a href="#" class="pull-right">more..</a>
-		</div>
-
-		<div class="gcard">
-			<h3>Presidental Suite -</h3>
-			<p class="paragrf">Pullman has designed the Presidential suite for those seeking an exclusive abode. This vastly spacious suite features exquisite design and a host of 5-star amenities. Personal lounges – to relax in private. Well-equipped kitchenettes – for autonomy. Ultra-generous bathrooms – for luxuriating in style. With a wide work desk, exclusively designed Pullman bed and the best view in the hotel, the Presidential suite is the ultimate place to work or unwind.</p>
-			<a href="#" class="pull-right">more..</a>
-		</div>			
-		<amp-accordion>
-			<section class="OurClnt gcard2 marginTp20">
-				<h3 class="outlnNone pading">Online Reviews<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
-				<div  class="paraExplnd ">		
-					<p>Pullman has over 1500 genuine reviews on Tripadvisor, Booking.com, Google & Airbnb</p>
-				</div>
-			</section>
-		  
-			<section class="OurClnt gcard2">
-				<h3 class="outlnNone pading">Locations<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
-				<div  class="paraExplnd ">
-					<p>Hotel Pullman New Delhi Aerocity
-						Asset No 02 GMR Hospitality District IGI Airport New Delhi, 110037 NEW DELHI
-						INDIA
-						Tel: (+91)1146080808
-						Fax: (+91)1146080809</p>
-				</div>		
-			</section>
-			
-			<section class="OurClnt gcard2">
-				<h3 class="outlnNone pading">Fully Serviced<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>		
-				<div  class="paraExplnd ">
-					<p>24/7 Front Desk, Daily Housekeeping, Concierge, Gym, In-House Cab Service, Laundry</p>
-				</div>		
-			</section>
-			
-			<section class="OurClnt gcard2">
-				<h3 class="outlnNone pading ">Great Amenities<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
-				<div class="paraExplnd ">
-					<p>Greenery, In-Apartment Kitchens, Room Service, Complimentary Breakfast &  Gym</p>
-				</div>		
-			</section>		
-		</amp-accordion>		
-		<amp-accordion>
-				<section class="OurClnt specialHead">
-					<h3 class="outlnNone gcardSpl">Hotel PULLMAN New Delhi Areocity<span class="pull-right"><i class="fa smallFa fa-chevron-down"></i></span></h3>
-					<div  class="specialpara">		
-						<p>Located just a 7-minute drive from Delhi International Airport, Pullman and Novotel New Delhi Aerocity offers 670 rooms a complex hotel and an outdoor heated swimming pool. It is a 10-minute drive away from Cybercity and business hubs of Gurgaon and New Delhi. The Delhi Aerocity Metro Station is 400 m away while the Worldmark is 200 m. It has 6 dining options and free WiFi throughout the property.</p>
-
-						<p>The air-conditioned rooms feature Bose sound link II, flat-screen satellite TV and Espresso Coffee Machines. It also has a minibar and tea/coffee maker. The private four-fixture bathroom comes with shower.</p>
-
-						<p>
-						Dining options include Pluck, a modern day eatery with an in-house farm. It has a unique Tea Deli concept that showcases a selection of Indian and International teas. Honk serves Pan Asian delicacies while Pling is a lounge bar. Refreshing beverages can be enjoyed at the all-day Café Pluck. Food Exchange is a multi-cuisine restaurant and Quoin, a modern bar that offers exquisite wines and cocktails.</p>
-					</div>
-				</section>
-		</amp-accordion>		
-		
-		<div class="padding10">
-			<h1 class="h1Ding mrgnTop30">We strive for Excellence</h1>
-			<div class="mrgnTop30"><small>Families, Tourists, Corporate Travelers, Expats- Accommodation specially designed for different needs.</small></div>
-		</div>
-
-		<section class="mrgnTop30">
-			<amp-carousel 
-			width="400"
-			height="480"
-			layout="responsive"
-			layout="fixed-height"
-			autoplay
-			delay="5000"
-			  type="slides">
-				<div class="">
-						<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2017/05/15141059/sundower-Image-2-340x340.jpg" width="400" height="350" layout="responsive"></amp-img>
-					<div class="">
-						<p><b>Sundowner By Pullman</b></p>
-					   <small> <p>This summer, Pullman New Delhi Aerocity brings Sunday Sundowner for all you water babies. Enjoy music, dancing, unlimitless* drinking till 8:00 p.m.</p></small>
-					</div>
-				</div>
-				<div class="slides">
-					<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2017/06/09144102/Rouge-Blanc-Image-340x340.jpg"  width="400" height="350" layout="responsive"></amp-img>
-					<div class="">
-						<p><b>Signature Wine Labels by...</b></p>
-					   <small><p>The onset of the summer is marked by a refreshing introduction of two noteworthy entrants to the wine lists of the capital.</p></small>
-					</div>
-				</div>		
-				<div class="slides">
-					<amp-img src="http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2016/08/16061035/Final-Executive-Lunch-Set-Menu-340x340.jpg"  width="400" height="350" layout="responsive"></amp-img>
-					<div class="">
-						<p><b>EXECUTIVE LUNCH</b></p>
-						<small><p>Pluck, Our Modern day eatery Restaurant with an in-house farm offers The Executive Lunch Menu. The menu comes in a choice of two, three or four courses.</p></small>
-					</div>
-				</div>
-			</amp-carousel>	
-		</section>		
 
 		<footer>
 			<section class="bgColor footer">
@@ -552,7 +443,7 @@
   <style>
 		h3[role="heading"]{padding-left:30px;}
 		.navList > li > a {color:#4a4a4a;}
-  		.footer{box-shadow: 0px -3px 20px rgba(0, 0, 0, 0.40);margin-top:10px;display:flex;justify-content:center;height: 375px;text-align:center;color:#fff;}
+  		.footer{box-shadow: 0px -3px 20px rgba(0, 0, 0, 0.40);margin-top:10px;display:flex;justify-content:center;height: 375px;text-align:center;color:#fff;width:100%;}
 		.f2Sec{width: 100%;}
 		.f2SecCntainr{display:flex;flex-wrap:wrap;}
 		.f2Secinner{width:100%;}
