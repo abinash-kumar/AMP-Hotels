@@ -229,7 +229,7 @@
   <body>	
 		<nav class="bgColor navbar">
 			<a href="#"><amp-img src="img/accordLogo.PNG"  width="200" height="60" ></amp-img></a>			
-			<a href="#" class="outlnNone NavBtn"  tabindex="3"   on="tap:sidebar.toggle" role="button"><span class="font30px" on="tap:sidebar.toggle" role="button"><i class="fa fa-bars"></i></span></a>
+			<a href="#" class="outlnNone NavBtn"  tabindex="3"   on="tap:sidebar.toggle" role="button"><span class="font30px"><i class="fa fa-bars"></i></span></a>
 		</nav>
 		
 		<div class="circleBtn">
@@ -358,7 +358,7 @@
 			</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
 		</script>
 			<div class="BookNw" ></div>
-			<div class="BookNw fixed" >Book Now</div>
+			<div class="BookNw fixed" on="tap:bookingLigtForm.toggle" role="button" >Book Now</div>
 	</div>
   
   <!-- navigation bar code here  -->
@@ -482,7 +482,7 @@
   
 <amp-sidebar id="bookingLigtForm"
 	  layout="nodisplay"
-	  side="left">
+	  side="right">
 	<amp-img class="amp-close-image"		
 		width="20"
 		height="20"
