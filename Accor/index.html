@@ -189,7 +189,7 @@
 			  autoplay
 			  delay="5000">
 				<div class="textSlides">
-					<a href="tel:+91-880-046-1053">	<i class="fa fa-hotel"></i>
+					<a href="#" on="tap:bookingLigtForm.toggle" role="button">	<i class="fa fa-hotel"></i>
 						<h2>Book Now</h2>
 					</a>
 				</div>
@@ -567,7 +567,82 @@
 <!-- navbar ends here -->
 
  
+ <!-- Form code starts here  -->
+  
+<amp-sidebar id="bookingLigtForm"
+	  layout="nodisplay"
+	  side="right">
+		<div class="formCntner">
+			<span class="formClose" on="tap:bookingLigtForm.close" >X</span>
+			<div class="formBook">
+				<h3 class="textCenter">Book A Room Now</h3>
+				<form>
+					<ul class="ulForm">
+						<li>
+							<div class="bkFormInpt">
+								<label>Check In :</label>
+								<input type="date"/>
+							</div>
+						</li>
+						<li>
+							<div class="bkFormInpt">
+								<label>Check Out :</label>
+								<input type="date"/>
+							</div>
+						</li>
+						<li>
+							<div class="bkFormInpt">
+								<label>Adults :</label>
+								<select class="selectWidth selectSpl">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<div class="bkFormInpt">
+								<label>Children :</label>
+								<select class="selectWidth selectSpl">
+									<option>0</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<div class="bkFormInpt">
+								<label>Loyalty Card :</label>
+								<input type="text" name="Lcard"/>
+							</div>
+						</li>
+						<li>
+							<div class="bkFormInpt">
+								<label>Preferential code :</label>
+								<input type="text" name="Pcard" />
+							</div>
+						</li>					
+					</ul>
+					<input type="submit" class="formSbmt" name="submit" />
+				</form>
+			</div>
+		</div>
 
+<style>
+	.formCntner{width:100%;position:absolute;}#bookingLigtForm{width:100%; }
+	.formClose{position:absolute;font-size:20px;color:#000;right:30px;top:30px;}
+	.textCenter{text-align:center;}
+	.formBook{margin-top:15%;padding:20px;}
+	.bkFormInpt{position:relative;width:100%;background:#fff;height:60px;}
+	.bkFormInpt>label{position:absolute;top:0px;left:10px;}
+	.bkFormInpt>input,.selectWidth{position: absolute;bottom:10px;left:0px;width:88%;height:25px;outline:none;border-style:none;border-bottom:1px solid #146df8;padding-left:30px;}
+	.selectSpl{width:100%;}
+	.ulForm{padding:0px;margin-top: 15%;}.ulForm>li{list-style:none;}
+	.formSbmt{outline: none;padding: 10px 30px;color: #fff;border: none;background: #fb641b;}
+	.i-amphtml-sidebar-mask{opacity:1;}
+</style>
+<!-- Form overley code ends here -->
 
 <!-- below is style for footer -->
   
